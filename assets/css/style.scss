@@ -1,6 +1,7 @@
 ---
 ---
 .page-header {
+  color: #00FFFF;
   background-image: url("logo.gif");
   background-size: 25% 25%;
 }
@@ -8,6 +9,7 @@
 @import "{{ site.theme }}";
 
 .page-header {
+  color: #00FFFF;
   background-image: url("logo.gif");
   background-size: 25% 25%;
 }
