@@ -2,10 +2,12 @@
 ---
 .page-header {
   background-image: url("logo.gif");
+  background-size: contain;
 }
 
 @import "{{ site.theme }}";
 
 .page-header {
   background-image: url("logo.gif");
+  background-size: contain;
 }
