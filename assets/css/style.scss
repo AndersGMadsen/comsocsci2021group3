@@ -3,6 +3,7 @@
 .page-header {
   background-image: url("logo.gif");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @import "{{ site.theme }}";
@@ -10,4 +11,5 @@
 .page-header {
   background-image: url("logo.gif");
   background-size: cover;
+  background-repeat: no-repeat;
 }
