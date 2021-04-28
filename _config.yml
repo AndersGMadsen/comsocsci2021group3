@@ -1,6 +1,7 @@
 theme: jekyll-theme-cayman
 show_downloads: ["false"]
 github:
+  repository_name: [Sebseb]
   is_project_page: ["true"]
 page:
   description: [A short description of your site's purpose]
