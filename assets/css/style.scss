@@ -3,13 +3,7 @@
 .page-header {
   color: #00FFFF;
   background-image: url("logo.gif");
-  background-size: 25% 25%;
+  background-size: 100% 100%;
 }
 
 @import "{{ site.theme }}";
-
-.page-header {
-  color: #00FFFF;
-  background-image: url("logo.gif");
-  background-size: 25% 25%;
-}
