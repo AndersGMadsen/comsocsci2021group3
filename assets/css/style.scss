@@ -1,9 +1,10 @@
 ---
 ---
+
+@import "{{ site.theme }}";
+
 .page-header {
-  color: #00FFFF;
+  color: #000000;
   background-image: url("logo.gif");
   background-size: 100% 100%;
 }
-
-@import "{{ site.theme }}";
