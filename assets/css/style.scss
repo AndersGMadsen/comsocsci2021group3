@@ -1,8 +1,7 @@
 ---
 ---
 .page-header {
-  background-image: linear-gradient(0deg, $header-bg-color-secondary, $header-bg-color);
-}
+  background-image: url(/logo.jpg)
 
 @import "{{ site.theme }}";
 
