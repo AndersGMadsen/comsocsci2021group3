@@ -2,14 +2,12 @@
 ---
 .page-header {
   background-image: url("logo.gif");
-  background-size: 150% 150%;
-  background-repeat: no-repeat;
+  background-size: 75% 75%;
 }
 
 @import "{{ site.theme }}";
 
 .page-header {
   background-image: url("logo.gif");
-  background-size: 150% 150%;
-  background-repeat: no-repeat;
+  background-size: 75% 75%;
 }
