@@ -84,8 +84,9 @@ function vis(new_controls) {
     controls[key] = new_controls[key];
   });
 
-  controls['file_path'] = "miserables.json";
-  
+  //controls['file_path'] = "miserables.json";
+  if (controls['file_path'] == "") controls['file_path'] = "https://gist.githubusercontent.com/ulfaslak/6be66de1ac3288d5c1d9452570cbba5a/raw/0b9595c09b9f70a77ee05ca16d5a8b42a9130c9e/miserables.json";
+
   // Force layout
   var simulation = d3.forceSimulation()
     .force("link", d3.forceLink()
