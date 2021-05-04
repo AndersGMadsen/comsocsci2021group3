@@ -16,9 +16,11 @@
 }
 
 .canvas_container {
-	width: 100%;
-	height: 100%;
+	width: 64.730392155vw;
+	height: 64.730392155vw;
 	margin: auto;
+	max-width: 94.321428542vh;
+	max-height: 94.321428542vh;
 	border-style: solid;
 	border-color: #cacaca;
 	border-width: 2px;
