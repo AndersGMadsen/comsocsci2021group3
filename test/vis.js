@@ -3,19 +3,6 @@
 
 function vis(new_controls) {
 
-  // Context //
-  // ------- //
-
-  var isLocal = window.location['href'].includes("http://localhost");
-  var isWeb = window.location['href'].includes("https://ulfaslak");
-  var isTest = window.location['href'].includes("pytest");
-
-
-  // if this is a test, call the postData function after 5 seconds
-  if (isTest)
-    d3.timeout(postData, 5000);
-
-
   // Canvas //
   // ------ //
   
@@ -55,71 +42,6 @@ function vis(new_controls) {
     link.click();
   }
 
-  // Upload dataset button
-  function uploadEvent() {
-    var fileInput = document.getElementById('upload');
-    fileInput.addEventListener("change", function() {
-      var file = fileInput.files[0];
-      var reader = new FileReader();
-
-      if (file.name.endsWith(".json")) {
-        reader.onload = function(e) {
-          restartIfValidJSON(JSON.parse(reader.result));
-        }
-      } else if (file.name.endsWith(".csv")) {
-        reader.onload = function(e) {
-          restartIfValidCSV(reader.result)
-        }
-      } else {
-        Swal.fire({ text: "File not supported", type: "error" })
-        return false
-      }
-      reader.readAsText(file);
-    });
-  }
-
-  // Upload network
-  var uploadFile = function() {
-    var uploader = document.getElementById('upload');
-    uploader.click()
-    uploadEvent();
-  }
-
-  // Post data back to Python
-  function postData() {
-    let nw_prop = get_network_properties();
-    let controls_copy = {};
-    for (let prop in controls){
-      if (
-        (controls.hasOwnProperty(prop)) &&
-        (prop != 'file_path') &&
-        (prop != 'post_to_python') &&
-        (prop != 'download_figure')
-       ){
-        controls_copy[prop] = controls[prop];
-      }
-    }
-    post_json(nw_prop, controls_copy, canvas, function(){
-      Swal.fire({
-        //type: "success",
-        title: "Success!",
-        text: "Closes automatically after 3 seconds.",
-        type: "success",
-        timer: 3000,
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'OK',
-      }).then((willDelete) => {
-          if (!willDelete) {
-          } else {
-            post_stop();
-          }
-      });
-    });
-  }
-
-
   // Simulation //
   // ---------- //
 
@@ -156,16 +78,13 @@ function vis(new_controls) {
     'min_link_weight_percentile': 0.0,
     'max_link_weight_percentile': 1.0
   };
-
-  // Context dependent keys
-  if (isLocal) controls['post_to_python'] = postData;
-  if (isWeb)   controls['upload_file'] = uploadFile;
     
   // Overwrite default controls with inputted controls
   d3.keys(new_controls).forEach(key => {
     controls[key] = new_controls[key];
   });
 
+  controls['file_path'] = "miserables.json";
   if (controls['file_path'] == "") controls['file_path'] = "https://gist.githubusercontent.com/ulfaslak/6be66de1ac3288d5c1d9452570cbba5a/raw/0b9595c09b9f70a77ee05ca16d5a8b42a9130c9e/miserables.json";
 
   // Force layout
@@ -183,7 +102,6 @@ function vis(new_controls) {
 
   // Start
   handleURL(controls['file_path']);
-  uploadEvent();
 
   function ticked() {
 
