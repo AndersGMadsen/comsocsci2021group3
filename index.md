@@ -1,6 +1,6 @@
 # comsocsci2021group3
 
-### Title
+### Why Philosophy?
 
 https://andersgmadsen.github.io/comsocsci2021group3/
 
