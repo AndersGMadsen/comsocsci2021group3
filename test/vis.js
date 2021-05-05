@@ -49,29 +49,29 @@ function vis(new_controls) {
 
 
 
-  window.controls = {'zoom': 0.8154785672342925,
-                 'node_charge': -16.934820904286553,
-                 'node_gravity': 0,
-                 'link_distance': 29.547739283617148,
-                 'link_distance_variation': 0,
-                 'node_collision': true,
-                 'wiggle_nodes': false,
-                 'freeze_nodes': false,
-                 'node_fill_color': '#62a698',
-                 'node_stroke_color': '#555555',
-                 'node_label_color': '#000000',
-                 'display_node_labels': false,
-                 'scale_node_size_by_strength': true,
-                 'node_size': 23.118027011156784,
-                 'node_stroke_width': 1.0158543746330007,
-                 'node_size_variation': 1.296887844979448,
-                 'link_color': '#7c7c7c',
-                 'link_width': 0.08,
-                 'link_alpha': 0.7179095713446858,
-                 'link_width_variation': 0,
-                 'display_singleton_nodes': true,
-                 'min_link_weight_percentile': 0,
-                 'max_link_weight_percentile': 1}
+  window.controls = {"zoom": 0.7
+                     "node_charge": -80
+                     "node_gravity": 0.04
+                     "link_distance": 0.1
+                     "link_distance_variation": 1
+                     "node_collision": true
+                     "wiggle_nodes": true
+                     "freeze_nodes": false
+                     "node_fill_color": "#79aaa0"
+                     "node_stroke_color": "#555555"
+                     "node_label_color": "#000000"
+                     "display_node_labels": false
+                     "scale_node_size_by_strength": true
+                     "node_size": 20
+                     "node_stroke_width": 0.95
+                     "node_size_variation": 0.4
+                     "link_color": "#7c7c7c"
+                     "link_width": 0.2
+                     "link_alpha": 0.25
+                     "link_width_variation": 0.5
+                     "display_singleton_nodes": true
+                     "min_link_weight_percentile": 0
+                     "max_link_weight_percentile": 1}
     
   // Overwrite default controls with inputted controls
   d3.keys(new_controls).forEach(key => {
