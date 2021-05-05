@@ -6,8 +6,38 @@ The following will be a deep dive into the realm of Philosophy. The curious adol
 ### How data is gathered
 The data is gathered using the Python wrapper for Wikipedia’s API, _Wikipedia-API_. Using a list of philosophers, _Lists of philosophers by name_ provided by Wikipedia (found here https://en.wikipedia.org/wiki/Lists_of_philosophers) data was extracted from each philosopher's Wikipedia page: content (text), links (outgoing Wikipedia hyperlinks) and info box. These were used to create the initial graph. 
 
-### 
-
+### Initial Graph
+#### To be or not to be.. directed or undirected
+LOREM IPSUM
+#### Nodes, links and density
+LOREM IPSUM
+#### Degree (plots log-trans: mean median min max)
+LOREM IPSUM
+#### Top 5 in/out degree
+LOREM IPSUM
+#### Scatterplot (in out correlation)
+LOREM IPSUM
+#### Whats next?
+### Initial text 
+#### WikiPedia page count
+LOREM IPSUM 
+#### Content
+LOREM IPSUM
+#### Cleaning
+LOREM IPSUM
+#### TF-IDF
+LOREM IPSUM
+#### Sentiment Analisys
+LOREM IPSUM
+#### Lexical Diversity
+LOREM IPSUM 
+### Deeper Analisys (not sure yet)
+#### Community detection
+#### Some advanced investigations and discussions
+Small world property, Clustering, Betweenness, Assortiveness etc.
+#### Branch
+#### TF-IDF for communities
+#### 
 https://andersgmadsen.github.io/comsocsci2021group3/
 
 <iframe width="100%" height="684" frameborder="0" src="https://observablehq.com/embed/@andersgmadsen/untitled?cells=chart"></iframe>
