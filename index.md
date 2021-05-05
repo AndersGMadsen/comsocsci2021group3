@@ -26,9 +26,11 @@ Following the above algorithm for links, the Philosophy Network has a total of ?
 
 $$\frac{|E|}{|E|(|E|-1)} = ???$$
 
-where |E| denotes the number of links. 
+where |E| denotes the number of links. As seen, the network is very sparse and this is what we expect from real world networks. 
 #### Degree (plots log-trans: mean median min max)
-LOREM IPSUM
+<img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+
+
 #### Top 5 in/out degree
 LOREM IPSUM
 #### Scatterplot (in out correlation)
