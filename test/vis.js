@@ -69,7 +69,7 @@ function vis(new_controls) {
                      "link_color": "#7c7c7c",
                      "link_width": 0.2,
                      "link_alpha": 0.25,
-                     "link_width_variation": 0.5
+                     "link_width_variation": 0.5,
                      "display_singleton_nodes": true,
                      "min_link_weight_percentile": 0,
                      "max_link_weight_percentile": 1}
