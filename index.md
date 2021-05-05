@@ -52,6 +52,10 @@ Continuing on the last point made above, we now investigate if there a correlati
 The above plot shows the respective in- and out-degrees for each Philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a Philosophers in-degree to reveal something about the appertaining out-degree - namely that Philosophers with high in-degree also have high out-degree, and low in-degree Philosophers have low out-degree. 
 #### Whats next?
 ### Initial text 
+Our main goal with the following text analysis is to utilize NLP tools that we have learned throughout the course to get an deeper insight about the content in the different philosopher body text as well as the larger corpuses based on known core-areas and the interpreted ones based on network connections. Using different methods such as term-frequency (TF), term frequency–inverse document frequency and WordClouds, we want to find out which words describes each philosopher as well as categorized documents and discuss whether the result was expected or not. Furthermore, this could contribute to the investigation of whether our split seems meaningful or not.
+
+Before abovementioned tools can be utilized, a tokenization (separate each word from each other) of the individual philosophers content-variable is performed using Natural Language Tool Kit's (NLTK)  `word_tokenize` followed by a cleaning procedure using regular expression (regex) for removing punctuation as well as setting every word to lowercase. Moreover, every _stopword_ is removed using NLTK's `nltk.corpus.stopwords.words('english')`, which is sufficient as the corpus is in English while at last, every word is stemmed using the `SnowballStemmer` from the NLTK library. 
+
 #### WikiPedia page count
 LOREM IPSUM 
 #### Content
@@ -76,5 +80,4 @@ https://andersgmadsen.github.io/comsocsci2021group3/
 <iframe width="100%" height="684" frameborder="0" src="https://observablehq.com/embed/@andersgmadsen/untitled?cells=chart"></iframe>
 
 ### New title
-
-Anders > Jonas
+Anders << Jonas
