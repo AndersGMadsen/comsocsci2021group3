@@ -31,13 +31,19 @@ $$\frac{|E|}{|E|(|E|-1)} = ???$$
 
 where |E| denotes the number of links. As seen, the network is very sparse and this is what we expect from real world networks. 
 #### Degree (plots log-trans: mean median min max)
+Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network we will have a in, and an out-degree for each Philosopher. Naturally, the sum of the in and out-degrees must be identical since _what goes around comes around_. 
 <img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
 
+As seen, the average in-degree is ??? and the average out-degree is ???. Since we have log-log transformed the x- and y-axis in the plot, it is apparent that the degree distribution is not normally distributed, but instead is very heavy tailed - meaning that we have some very high degree nodes relative to the averages. In layman terms, this simply means that some philosophers have alot of in and out-going links. 
 
 #### Top 5 in/out degree
-LOREM IPSUM
+But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
+<img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+
+As seen, almost all of the Philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other Philosophers point to the Philosopher in question and out-degree reveals how many philosophers the philosopher in question points towards (on Wikiepedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to in many other Philosopher Wikipedia pages, or link to other Philosophers Wikipedia pages. 
+
 #### Scatterplot (in out correlation)
-LOREM IPSUM
+Continuing on the last point made above: is there a correlation between the in- and out-degree for philosophers? 
 #### Whats next?
 ### Initial text 
 #### WikiPedia page count
