@@ -24,7 +24,7 @@ More precisely, a directed link between a philosopher (A) and a philosopher (B) 
 #### Nodes, links and density
 Following the above algorithm for links, the Philosophy Network has a total of ??? nodes and ??? links. As seen, we have less nodes than observations because some Philosophers do not point towards others and are not pointed towards. For any graph we can describe appertaining density as the number of actual links over the number possible links. For a directed graph we have the following equation:
 
-$\frac{|E|}{|E|(|E|-1)} = ???$ 
+$$\frac{|E|}{|E|(|E|-1)} = ???$$
 
 where |E| denotes the number of links. 
 #### Degree (plots log-trans: mean median min max)
