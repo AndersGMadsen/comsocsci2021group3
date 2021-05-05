@@ -49,28 +49,29 @@ function vis(new_controls) {
 
 
 
-  window.controls = {"zoom": 0.7
-                     "node_charge": -80
-                     "node_gravity": 1
-                     "link_distance": 0.1
-                     "link_distance_variation": 1
-                     "node_collision": true
-                     "wiggle_nodes": true
-                     "freeze_nodes": false
-                     "node_fill_color": "#79aaa0"
-                     "node_stroke_color": "#555555"
-                     "node_label_color": "#000000"
-                     "display_node_labels": false
-                     "scale_node_size_by_strength": true
-                     "node_size": 20
-                     "node_stroke_width": 0.95
-                     "node_size_variation": 0.4
-                     "link_color": "#7c7c7c"
-                     "link_width": 0.2
-                     "link_alpha": 0.25
+  window.controls = {"file_path" : "graph.json",
+                     "zoom": 0.7,
+                     "node_charge": -80,
+                     "node_gravity": 1,
+                     "link_distance": 0.1,
+                     "link_distance_variation": 1,
+                     "node_collision": true,
+                     "wiggle_nodes": true,
+                     "freeze_nodes": false,
+                     "node_fill_color": "#79aaa0",
+                     "node_stroke_color": "#555555",
+                     "node_label_color": "#000000",
+                     "display_node_labels": false,
+                     "scale_node_size_by_strength": true,
+                     "node_size": 20,
+                     "node_stroke_width": 0.95,
+                     "node_size_variation": 0.4,
+                     "link_color": "#7c7c7c",
+                     "link_width": 0.2,
+                     "link_alpha": 0.25,
                      "link_width_variation": 0.5
-                     "display_singleton_nodes": true
-                     "min_link_weight_percentile": 0
+                     "display_singleton_nodes": true,
+                     "min_link_weight_percentile": 0,
                      "max_link_weight_percentile": 1}
     
   // Overwrite default controls with inputted controls
