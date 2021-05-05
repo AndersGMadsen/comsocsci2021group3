@@ -40,10 +40,12 @@ As seen, the average in-degree is ??? and the average out-degree is ???. Since w
 But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
 <img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
 
-As seen, almost all of the Philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other Philosophers point to the Philosopher in question and out-degree reveals how many philosophers the philosopher in question points towards (on Wikiepedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to in many other Philosopher Wikipedia pages, or link to other Philosophers Wikipedia pages. 
+As seen, almost all of the Philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other Philosophers point to the Philosopher in question and out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to in many other Philosopher Wikipedia pages, or link to other Philosophers Wikipedia pages. 
 
 #### Scatterplot (in out correlation)
-Continuing on the last point made above: is there a correlation between the in- and out-degree for philosophers? 
+Continuing on the last point made above, we now investigate if there a correlation between the in- and out-degree for philosophers. 
+<img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+The above plot shows the respective in- and out-degrees for each Philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a Philosophers in-degree to reveal something about the appertaining out-degree - namely that we expect high in-degree Philosophers to have high out-degree, and low in-degree Philosophers to have low out-degree. 
 #### Whats next?
 ### Initial text 
 #### WikiPedia page count
