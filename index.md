@@ -45,7 +45,8 @@ As seen, almost all of the Philosophers seen in the table are well-known seminal
 #### Scatterplot (in out correlation)
 Continuing on the last point made above, we now investigate if there a correlation between the in- and out-degree for philosophers. 
 <img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
-The above plot shows the respective in- and out-degrees for each Philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a Philosophers in-degree to reveal something about the appertaining out-degree - namely that we expect high in-degree Philosophers to have high out-degree, and low in-degree Philosophers to have low out-degree. 
+
+The above plot shows the respective in- and out-degrees for each Philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a Philosophers in-degree to reveal something about the appertaining out-degree - namely that Philosophers with high in-degree also have high out-degree, and low in-degree Philosophers have low out-degree. 
 #### Whats next?
 ### Initial text 
 #### WikiPedia page count
