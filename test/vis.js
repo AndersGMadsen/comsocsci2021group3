@@ -64,7 +64,7 @@ function vis(new_controls) {
        "scale_node_size_by_strength": true,
        "node_size": 22,
        "node_stroke_width": 0.95,
-       "node_size_variation": 0.6,
+       "node_size_variation": 0.5,
        "link_color": "#7c7c7c",
        "link_width": 0.2,
        "link_alpha": 0.25,
