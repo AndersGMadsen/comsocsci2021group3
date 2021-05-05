@@ -8,7 +8,10 @@ The data is gathered using the Python wrapper for Wikipedia’s API, _Wikipedia-
 
 ### Initial Graph
 #### To be or not to be.. directed or undirected
-LOREM IPSUM
+As we wish to get a nice overview of the Philosophy Network, we must consider whether the network should be directed or undirected. The case for making the network directed is that we preserve the integrity of the Wikipedia link structure. Hyperlinks only point one way, and thus a directed graph shows which Philosopher Wikipedia-pages point to others. However, since the number of Philosophers is finite, we also know the incoming links to each Philosopher. On the other hand, the undirected version of the Philosophy Network gives a more general overview of the Wikipedia link structure and makes community detection much easier. For this project we will primarily make use of the directed Philosophy Network except when dealing with community detection. The reason for this is that many of our investigations be less ambiguous and reveal more wrt. Wikipedia.
+
+More precisely, a link between a philosopher (A) and a philosopher (B) is created if there is a hyperlink from the Wikipedia page of (A) to the Wikipedia page (B). 
+
 #### Nodes, links and density
 LOREM IPSUM
 #### Degree (plots log-trans: mean median min max)
