@@ -154,8 +154,12 @@ As seen, Jeremy Bentham is a member of three philosophical branches according to
 -	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
 -	Next, for each ambiguous philosopher (those who appear in more than one branch of philosophy), iterate over the branches of philosophy the philosopher is apart of. Then count the number of neighbors in each of those branches, and finally assign the core area as being the branch with the most neighbors. 
 -	Finally, for all philosophers that do not appear in any branch of philosophy, iterate through neighbors and assign the core area based on a majority vote.  
--	
+
+
 By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method described above later. However, for now, we will continue by creating the subgraphs for each branch of philosophy. 
+
+For each branch of philosophy, we create a subgraph by utilizing both the core area and branches of philosophy, such that we include philosophers which previously did not have any core area, and philosophers which are apart of many branches. Since we now wish to create meaningful subgraphs , if a philosopher is a part of many branches, they will appear in all of the appertaining branch subgraphs. The reader can essentially think of this as updating the branch lists, after classifying the philosophers using the neighbor-technique above, and then creating the subgraphs from the updated branches of philosophy. Thus we have kept the underlying integrity of the original branch lists
+
 
 #### Some advanced investigations and discussions
 Small world property, Clustering, Betweenness, Assortiveness etc.
