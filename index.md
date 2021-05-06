@@ -170,7 +170,7 @@ As seen, the modularity for the Louvain partition is much higher than the partit
 
 <img src="/assets/img/Modularity.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
 
-
+To help the reader understand what has been done, we have created a distribution of modularity scores of random networks based on the philosophy network using the core-area partition. The black line indicates the modularity score of the core-area partition. Had the black line laid within the bell-shaped curve, we would not consider the partition to be much different from any random partition of the network using the same branches of philosophy. However, because the black line lays far from the bellshaped part of the distribution, and has a much higher value, we consider the modularity of the core area split very significant – meaning that it is highly unlikely that it happened randomly. Consequently, even though the modularity score of the core-area partition is much lower than the optimal modularity found using the Louvain algorithm, it is still a very good partition of the philosophy network.  
 
 #### Deeper
 
