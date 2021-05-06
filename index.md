@@ -155,7 +155,9 @@ As seen, Jeremy Bentham is a member of three philosophical branches according to
 -	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
 -	Next, for each ambiguous philosopher (those who appear in more than one branch of philosophy), iterate over the branches of philosophy the philosopher is apart of. Then count the number of neighbors in each of those branches, and finally assign the core area as being the branch with the most neighbors. 
 -	Finally, for all philosophers that do not appear in any branch of philosophy, iterate through neighbors and assign the core area based on a majority vote.  
--	
+
+By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method described above later. For now, we will continue the investigation by examining the fitness of the core-area partition. The final partition for the graph by core area can be seen below. 
+
 #### Modularity
 In order to evaluate the core-area partition of the graph, we would like to introduce a concept to the reader called modularity. Without getting into the mathematical definition, we will briefly describe the concept of modularity in an intuitive way. 
 Modularity is a way of evaluating a partition, specifically the strength of the partition/division into communities. For any network we can partition the network into communities (naturally these occur in real networks) and use modularity to investigate the quality of the community structure. For any network made up of one single community we have that M=0. The higher the modularity is for a given partition, the better the community structure. A crude way of giving describing what a good partition entails is that in a good partition the connectedness between communities is sparse but remains high within the communities, meaning that the network only has few connections between communities but many within the respective communities. The reverse is also true, as networks are partitioned in ways that make the connectedness between communities higher, the modularity of the partitions will be lower and can even become negative. Naturally, when determining partitions in the real world one must be cognizant of what the partitions tells us about the network, we are interested in. 
@@ -174,7 +176,67 @@ As seen, the modularity for the Louvain partition is much higher than the partit
 
 To help the reader understand what has been done, we have created a distribution of modularity scores of random networks based on the philosophy network using the core-area partition. The black line indicates the modularity score of the core-area partition. Had the black line laid within the bell-shaped curve, we would not consider the partition to be much different from any random partition of the network using the same branches of philosophy. However, because the black line lays far from the bellshaped part of the distribution, and has a much higher value, we consider the modularity of the core area split very significant – meaning that it is highly unlikely that it happened randomly. Consequently, even though the modularity score of the core-area partition is much lower than the optimal modularity found using the Louvain algorithm, it is still a very good partition of the philosophy network.  
 
-#### Deeper
+#### Betweenness centrality 
+Another interesting investigation in the philosophy network is to compute the betweenness centrality of nodes. In this definition of centrality (and there are many definitions!) nodes that occur in many shortest paths are considered central in the graph and thus have high centrality scores.
+
+An intuitive way of thinking about betweenness centrality score is to consider the consumer airline network, specifically flight logistics. Imagine you live in Denmark and you are trying to book a flight from Copenhagen to a tiny island off the coast of Africa. How would your flight route look? You probably would not fly directly to the island since such a route (path) does not exist. On the other hand, your itinerary would probably not involve having you fly to Russia or the USA for a layover either. The most efficient route (i.e., the shortest path) would probably include a layover in a popular airport in Europe, like Amsterdam, and/or a layover in an airport closer to your destination, like Dubai. Big airports enable many possible flight routes, i.e., the shortest paths, and are very central to the aerospace network and thus have high betweenness centrality.
+For our philosopher network, the centrality betweenness becomes slightly more abstract, as links are now not flight routes but rather hyperlinks between Wikipedia pages. It does however still indicate the most central philosophers in the graph. The table below shows the most central philosophers in the directed philosophy network.
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Top 10 philosophers (betweenness centrality</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Immanuel Kant</td>
+    <td>0.044</td>
+  </tr>
+  <tr>
+    <td>Aristotle</td>
+    <td>0.043</td>
+  </tr>
+  <tr>
+    <td>Plato</td>
+    <td>0.037</td>
+  </tr>
+  <tr>
+    <td>Georg Wilhelm Friedrich Hegel</td>
+    <td>0.028</td>
+  </tr>
+  <tr>
+    <td>Bertrand Russell</td>
+    <td>0.024</td>
+  </tr>
+  <tr>
+    <td>Friedrich Nietzsche</td>
+    <td>0.023</td>
+  </tr>
+  <tr>
+    <td>René Descartes</td>
+    <td>0.021</td>
+  </tr>
+  <tr>
+    <td>David Hume</td>
+    <td>0.021</td>
+  </tr>
+  <tr>
+    <td>Maimonides</td>
+    <td>0.020</td>
+  </tr>
+  <tr>
+    <td>Karl Marx</td>
+    <td>0.019</td>
+  </tr>
+</tbody>
+</table>
+
+COMMENT
+
+
+#### deeper
+
 
 By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method described above later. However, for now, we will continue by creating the subgraphs for each branch of philosophy. 
 
