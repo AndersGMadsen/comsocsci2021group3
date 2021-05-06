@@ -41,7 +41,7 @@ As seen, the average in-degree is ??? and the average out-degree is ???. Since w
 
 #### Top 5 in/out degree
 But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
-<table>
+<table class="center">
 <thead>
   <tr>
     <th colspan="2">Top 10 philosophers (in-degree)</th>
@@ -51,67 +51,67 @@ But who are the top 10 philosophers in terms of in/out-degree? The table below s
 <tbody>
   <tr>
     <td>Aristotle</td>
-    <td>537</td>
+    <td>535</td>
     <td>Plato</td>
     <td>379</td>
   </tr>
   <tr>
     <td>Immanuel Kant</td>
-    <td>531</td>
+    <td>530</td>
     <td>Immanuel Kant</td>
-    <td>372</td>
+    <td>370</td>
   </tr>
   <tr>
     <td>Plato</td>
-    <td>440</td>
+    <td>438</td>
     <td>Baruch Spinoza</td>
     <td>348</td>
   </tr>
   <tr>
     <td>Georg Wilhelm Friedrich Hegel</td>
-    <td>423</td>
+    <td>422</td>
     <td>Georg Wilhelm Friedrich Hegel</td>
     <td>346</td>
   </tr>
   <tr>
     <td>Thomas Aquinas</td>
-    <td>398</td>
+    <td>397</td>
     <td>Augustine of Hippo</td>
-    <td>340</td>
+    <td>338</td>
   </tr>
   <tr>
     <td>David Hume</td>
-    <td>391</td>
-    <td>David Hume</td>
-    <td>332</td>
-  </tr>
-  <tr>
-    <td>Augustine of Hippo</td>
-    <td>385</td>
+    <td>390</td>
     <td>Friedrich Nietzsche</td>
     <td>331</td>
   </tr>
   <tr>
+    <td>Augustine of Hippo</td>
+    <td>384</td>
+    <td>David Hume</td>
+    <td>329</td>
+  </tr>
+  <tr>
     <td>Friedrich Nietzsche</td>
-    <td>367</td>
+    <td>366</td>
     <td>Bertrand Russell</td>
     <td>314</td>
   </tr>
   <tr>
     <td>Karl Marx</td>
-    <td>363</td>
+    <td>362</td>
     <td>Aristotle</td>
     <td>309</td>
   </tr>
   <tr>
     <td>Bertrand Russell</td>
-    <td>360</td>
+    <td>358</td>
     <td>Gottfried Leibniz</td>
     <td>296</td>
   </tr>
 </tbody>
 </table>
-
+</center>
 As seen, almost all of the Philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other Philosophers point to the Philosopher in question and out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to in many other Philosopher Wikipedia pages, or link to other Philosophers Wikipedia pages. 
 
 #### Scatterplot (in out correlation)
