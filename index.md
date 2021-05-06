@@ -234,6 +234,9 @@ As seen, the modularity for the Louvain partition is much higher than the partit
 
 To help the reader understand what has been done, we have created a distribution of modularity scores of random networks based on the philosophy network using the core-area partition. The black line indicates the modularity score of the core-area partition. Had the black line laid within the bell-shaped curve, we would not consider the partition to be much different from any random partition of the network using the same branches of philosophy. However, because the black line lays far from the bellshaped part of the distribution, and has a much higher value, we consider the modularity of the core area split very significant – meaning that it is highly unlikely that it happened randomly. Consequently, even though the modularity score of the core-area partition is much lower than the optimal modularity found using the Louvain algorithm, it is still a very good partition of the philosophy network.  
 
+#### Assortativity
+Another interesting network measurement is assortativity. In short, assortativity is a measure of how similar neighboring nodes are in a graph, categorized by some metric. The most standard form of assortativity is degree- assortativity which, as the name implies, is a statistical investigation that measures if nodes of the same degree tend to link to each-other. However, we will also use assortativity to investigate whether philosophers of a certain core-area are linked to other philosophers of the same core-area in the philosophy network. To supply the reader with some theoretical grounding, we generally say that a network is highly assortative if its assortativity score close to 1, and highly disassortative if the assortativity score close to -1.
+
 #### deeper
 
 
