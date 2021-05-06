@@ -21,6 +21,7 @@ function vis(new_controls) {
   let width = canvas.width;
   let height = canvas.height;
 
+
   // Retina canvas rendering    
   var devicePixelRatio = window.devicePixelRatio || 1
   d3.select(canvas)
@@ -29,6 +30,11 @@ function vis(new_controls) {
     .style("width", width + "px")
     .style("height", height + "px").node()
   context.scale(devicePixelRatio, devicePixelRatio)
+
+  canvas.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#69b3a2")
+  canvas.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#404080")
+  canvas.append("text").attr("x", 220).attr("y", 130).text("variable A").style("font-size", "15px").attr("alignment-baseline","middle")
+  canvas.append("text").attr("x", 220).attr("y", 160).text("variable B").style("font-size", "15px").attr("alignment-baseline","middle")
 
 
   // Input/Output //
