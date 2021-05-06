@@ -138,44 +138,6 @@ LOREM IPSUM
 #### Lexical Diversity
 LOREM IPSUM 
 ### Deeper Analisys (not sure yet)
-#### Communities
-In Philosophy, there are many subareas of interest, and often Philosophers will dip their toes into many different core areas. Think of seminal figures such as Immanuel Kant or Aristotle who both explored and influenced almost all branches of philosophy – what is their respective core area? For us, we may be temped to say that Immanuel Kant was an ethicist first and foremost, and Aristotle was an aesthetic, but we cannot rely on our individual opinions (although they may be correct) when trying to build a proper network via. the Wikipedia data gathered. However, Wikipedia gracefully provides a list of branches and their respective key philosophers. According to Wikipedia, philosophy can be divided into the following branches: 
--	Aestheticians
--	Epistemologists
--	Ethicists
--	Logicians
--	Metaphysicians
--	Social and political philosophers
-
-It would be nice if these sets were already disjoint – meaning that a philosopher could only be in one of the branch lists. However, in accordance with the points made before, many of the philosophers appear in multiple branches, and only a select few can be directly assigned a core area based on the provided branch lists. We provide the non-technical reader with the following Venn-diagram to understand the dilemma (using Jeremy Bentham as an example): 
-
-<img src="/assets/img/Venn.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
-
-As seen, Jeremy Bentham is a member of three philosophical branches according to Wikipedia, and given the ambiguity how should do we choose which branch is his main core area in a meaningful way? Furthermore, some philosophers do not appear in any of the branch lists, and how do we appropriately determine their philosophical core area? Unfortunately, there is no perfect way of doing this, but one way is to utilize the network structure to create meaningful classifications of philosophical core areas for those philosophers who do not appear in any branch list, and for those that appear in many and are therefore ambiguous to classify. The process is as follows: 
--	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
--	Next, for each ambiguous philosopher (those who appear in more than one branch of philosophy), iterate over the branches of philosophy the philosopher is apart of. Then count the number of neighbors in each of those branches, and finally assign the core area as being the branch with the most neighbors. 
--	Finally, for all philosophers that do not appear in any branch of philosophy, iterate through neighbors and assign the core area based on a majority vote.  
-
-By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method described above later. For now, we will continue the investigation by examining the fitness of the core-area partition. The final partition for the graph by core area can be seen below. 
-
-#### Modularity
-In order to evaluate the core-area partition of the graph, we would like to introduce a concept to the reader called modularity. Without getting into the mathematical definition, we will briefly describe the concept of modularity in an intuitive way. 
-Modularity is a way of evaluating a partition, specifically the strength of the partition/division into communities. For any network we can partition the network into communities (naturally these occur in real networks) and use modularity to investigate the quality of the community structure. For any network made up of one single community we have that M=0. The higher the modularity is for a given partition, the better the community structure. A crude way of giving describing what a good partition entails is that in a good partition the connectedness between communities is sparse but remains high within the communities, meaning that the network only has few connections between communities but many within the respective communities. The reverse is also true, as networks are partitioned in ways that make the connectedness between communities higher, the modularity of the partitions will be lower and can even become negative. Naturally, when determining partitions in the real world one must be cognizant of what the partitions tells us about the network, we are interested in. 
-
-As a small thought experiment, imagine two groups of junior developers that are working on the same project but different specific tasks, which we will call branches, and are led by two senior developers that communicate in order optimize the efficiency of the project work. Apart from the senior developers, the two groups do not communicate with each other, meaning that each junior developer only communicates with other junior developers within their branch of the project. In this setting a partition which groups developers into two categories based on the branch in the company will lead to high modularity - even the optimal partition in this case. However, if we instead partition developers based on whether they are right- or left-handed, we would expect the modularity to be lower unless it just somehow happens that only the two senior developers are left-handed while all the junior developers are right-handed - in that case would result in the same optimal modularity.
-
-Using a called the Louvain algorithm, we can determine the best partition for the philosophy network, i.e. the partition that leads to the highest modularity score. The two graphs below show (left) the best partitioning found using the Louvain algorithm, and (right) the partitioning we created using the branches of philosophy as a baseline. 
-
-
-INDSÆT GRAFTER FOR LOUVAIN OG VORES PARTITION. 
-
-
-As seen, the modularity for the Louvain partition is much higher than the partition we found using our methods. On a brighter note, our partition does seem to have some modularity as some node colors appear to be clustered together in the graph. It can however be a quite unfair evaluation to compare partitions against the Louvain partition as it becomes increasingly difficult to keep a high modularity as the number of edges and links grow. Therefore, using an algorithm that creates suitable random versions of a given partition, we statistically evaluate how likely our computed modularity is under the assumption that it was created randomly.  
-
-<img src="/assets/img/Modularity.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
-
-To help the reader understand what has been done, we have created a distribution of modularity scores of random networks based on the philosophy network using the core-area partition. The black line indicates the modularity score of the core-area partition. Had the black line laid within the bell-shaped curve, we would not consider the partition to be much different from any random partition of the network using the same branches of philosophy. However, because the black line lays far from the bellshaped part of the distribution, and has a much higher value, we consider the modularity of the core area split very significant – meaning that it is highly unlikely that it happened randomly. Consequently, even though the modularity score of the core-area partition is much lower than the optimal modularity found using the Louvain algorithm, it is still a very good partition of the philosophy network.  
-
 #### Betweenness centrality 
 Another interesting investigation in the philosophy network is to compute the betweenness centrality of nodes. In this definition of centrality (and there are many definitions!) nodes that occur in many shortest paths are considered central in the graph and thus have high centrality scores.
 
@@ -234,6 +196,43 @@ For our philosopher network, the centrality betweenness becomes slightly more ab
 
 COMMENT
 
+#### Communities
+In Philosophy, there are many subareas of interest, and often Philosophers will dip their toes into many different core areas. Think of seminal figures such as Immanuel Kant or Aristotle who both explored and influenced almost all branches of philosophy – what is their respective core area? For us, we may be temped to say that Immanuel Kant was an ethicist first and foremost, and Aristotle was an aesthetic, but we cannot rely on our individual opinions (although they may be correct) when trying to build a proper network via. the Wikipedia data gathered. However, Wikipedia gracefully provides a list of branches and their respective key philosophers. According to Wikipedia, philosophy can be divided into the following branches: 
+-	Aestheticians
+-	Epistemologists
+-	Ethicists
+-	Logicians
+-	Metaphysicians
+-	Social and political philosophers
+
+It would be nice if these sets were already disjoint – meaning that a philosopher could only be in one of the branch lists. However, in accordance with the points made before, many of the philosophers appear in multiple branches, and only a select few can be directly assigned a core area based on the provided branch lists. We provide the non-technical reader with the following Venn-diagram to understand the dilemma (using Jeremy Bentham as an example): 
+
+<img src="/assets/img/Venn.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
+
+As seen, Jeremy Bentham is a member of three philosophical branches according to Wikipedia, and given the ambiguity how should do we choose which branch is his main core area in a meaningful way? Furthermore, some philosophers do not appear in any of the branch lists, and how do we appropriately determine their philosophical core area? Unfortunately, there is no perfect way of doing this, but one way is to utilize the network structure to create meaningful classifications of philosophical core areas for those philosophers who do not appear in any branch list, and for those that appear in many and are therefore ambiguous to classify. The process is as follows: 
+-	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
+-	Next, for each ambiguous philosopher (those who appear in more than one branch of philosophy), iterate over the branches of philosophy the philosopher is apart of. Then count the number of neighbors in each of those branches, and finally assign the core area as being the branch with the most neighbors. 
+-	Finally, for all philosophers that do not appear in any branch of philosophy, iterate through neighbors and assign the core area based on a majority vote.  
+
+By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method described above later. For now, we will continue the investigation by examining the fitness of the core-area partition. The final partition for the graph by core area can be seen below. 
+
+#### Modularity
+In order to evaluate the core-area partition of the graph, we would like to introduce a concept to the reader called modularity. Without getting into the mathematical definition, we will briefly describe the concept of modularity in an intuitive way. 
+Modularity is a way of evaluating a partition, specifically the strength of the partition/division into communities. For any network we can partition the network into communities (naturally these occur in real networks) and use modularity to investigate the quality of the community structure. For any network made up of one single community we have that M=0. The higher the modularity is for a given partition, the better the community structure. A crude way of giving describing what a good partition entails is that in a good partition the connectedness between communities is sparse but remains high within the communities, meaning that the network only has few connections between communities but many within the respective communities. The reverse is also true, as networks are partitioned in ways that make the connectedness between communities higher, the modularity of the partitions will be lower and can even become negative. Naturally, when determining partitions in the real world one must be cognizant of what the partitions tells us about the network, we are interested in. 
+
+As a small thought experiment, imagine two groups of junior developers that are working on the same project but different specific tasks, which we will call branches, and are led by two senior developers that communicate in order optimize the efficiency of the project work. Apart from the senior developers, the two groups do not communicate with each other, meaning that each junior developer only communicates with other junior developers within their branch of the project. In this setting a partition which groups developers into two categories based on the branch in the company will lead to high modularity - even the optimal partition in this case. However, if we instead partition developers based on whether they are right- or left-handed, we would expect the modularity to be lower unless it just somehow happens that only the two senior developers are left-handed while all the junior developers are right-handed - in that case would result in the same optimal modularity.
+
+Using a called the Louvain algorithm, we can determine the best partition for the philosophy network, i.e. the partition that leads to the highest modularity score. The two graphs below show (left) the best partitioning found using the Louvain algorithm, and (right) the partitioning we created using the branches of philosophy as a baseline. 
+
+
+INDSÆT GRAFTER FOR LOUVAIN OG VORES PARTITION. 
+
+
+As seen, the modularity for the Louvain partition is much higher than the partition we found using our methods. On a brighter note, our partition does seem to have some modularity as some node colors appear to be clustered together in the graph. It can however be a quite unfair evaluation to compare partitions against the Louvain partition as it becomes increasingly difficult to keep a high modularity as the number of edges and links grow. Therefore, using an algorithm that creates suitable random versions of a given partition, we statistically evaluate how likely our computed modularity is under the assumption that it was created randomly.  
+
+<img src="/assets/img/Modularity.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
+
+To help the reader understand what has been done, we have created a distribution of modularity scores of random networks based on the philosophy network using the core-area partition. The black line indicates the modularity score of the core-area partition. Had the black line laid within the bell-shaped curve, we would not consider the partition to be much different from any random partition of the network using the same branches of philosophy. However, because the black line lays far from the bellshaped part of the distribution, and has a much higher value, we consider the modularity of the core area split very significant – meaning that it is highly unlikely that it happened randomly. Consequently, even though the modularity score of the core-area partition is much lower than the optimal modularity found using the Louvain algorithm, it is still a very good partition of the philosophy network.  
 
 #### deeper
 
