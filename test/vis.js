@@ -32,9 +32,6 @@ function vis(new_controls) {
     .style("height", height + "px").node()
   context.scale(devicePixelRatio, devicePixelRatio)
 
-  context.fillStyle = "red";
-  context.textAlign = "center";
-  context.fillText("Hello World", canvas.width/2, canvas.height/2);
   //context.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#69b3a2")
   //context.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#404080")
   //context.append("text").attr("x", 220).attr("y", 130).text("variable A").style("font-size", "15px").attr("alignment-baseline","middle")
@@ -121,6 +118,9 @@ function vis(new_controls) {
     context.globalCompositeOperation = "source-over";
     graph.nodes.forEach(drawNode);
     graph.nodes.forEach(drawText);
+    context.fillStyle = "red";
+    context.textAlign = "center";
+    context.fillText("Hello World", canvas.width/2, canvas.height/2);
   }
 
   // Restart simulation
