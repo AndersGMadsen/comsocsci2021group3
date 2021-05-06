@@ -115,49 +115,49 @@ function vis(new_controls) {
 
     context.font = "18px Helvetica";
     context.fillStyle = "#000000";
-    context.fillText("Epistemologists", width*0.80, height*0.04);
+    context.fillText("Epistemologists", width*0.78, height*0.04);
     context.beginPath();
-    context.arc(width*0.78, height*0.03, 9, 0, Math.PI*2, false);
+    context.arc(width*0.76, height*0.03, 9, 0, Math.PI*2, false);
     context.fillStyle = '#FC7634';
     context.fill();
 
     context.font = "18px Helvetica";
     context.fillStyle = "#000000";
-    context.fillText("Metaphysicians", width*0.80, height*0.08);
+    context.fillText("Metaphysicians", width*0.78, height*0.08);
     context.beginPath();
-    context.arc(width*0.78, height*0.07, 9, 0, Math.PI*2, false);
+    context.arc(width*0.76, height*0.07, 9, 0, Math.PI*2, false);
     context.fillStyle = "#1FD082";
     context.fill();
 
     context.font = "18px Helvetica";
     context.fillStyle = "#000000";
-    context.fillText("Logicians", width*0.80, height*0.12);
+    context.fillText("Logicians", width*0.78, height*0.12);
     context.beginPath();
-    context.arc(width*0.78, height*0.11, 9, 0, Math.PI*2, false);
+    context.arc(width*0.76, height*0.11, 9, 0, Math.PI*2, false);
     context.fillStyle = '#030F4F';
     context.fill();
 
     context.font = "18px Helvetica";
     context.fillStyle = "#000000";
-    context.fillText("Sociopoliticals", width*0.80, height*0.16);
+    context.fillText("Sociopoliticals", width*0.78, height*0.16);
     context.beginPath();
-    context.arc(width*0.78, height*0.15, 9, 0, Math.PI*2, false);
+    context.arc(width*0.76, height*0.15, 9, 0, Math.PI*2, false);
     context.fillStyle = '#F6D04D';
     context.fill();
 
     context.font = "18px Helvetica";
     context.fillStyle = "#000000";
-    context.fillText("Ethicists", width*0.80, height*0.20);
+    context.fillText("Ethicists", width*0.78, height*0.20);
     context.beginPath();
-    context.arc(width*0.78, height*0.19, 9, 0, Math.PI*2, false);
+    context.arc(width*0.76, height*0.19, 9, 0, Math.PI*2, false);
     context.fillStyle = '#2F3EEA';
     context.fill();
 
     context.font = "18px Helvetica";
     context.fillStyle = "#000000";
-    context.fillText("Aestheticians", width*0.80, height*0.24);
+    context.fillText("Aestheticians", width*0.78, height*0.24);
     context.beginPath();
-    context.arc(width*0.78, height*0.23, 9, 0, Math.PI*2, false);
+    context.arc(width*0.76, height*0.23, 9, 0, Math.PI*2, false);
     context.fillStyle = '#E83F48';
     context.fill();
   }
