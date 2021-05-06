@@ -100,6 +100,64 @@ But who are the top 10 philosophers in terms of in/out-degree? The table below s
 </tbody>
 </table>
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax" colspan="2"><span style="font-weight:bold">Top 10 philosophers (out-degree)</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Plato</td>
+    <td class="tg-0lax">379</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Immanuel Kant</td>
+    <td class="tg-0lax">372</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Baruch Spinoza</td>
+    <td class="tg-0lax">348</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Georg Wilhelm Friedrich Hegel</td>
+    <td class="tg-0lax">346</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Augustine of Hippo</td>
+    <td class="tg-0lax">340</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">David Hume</td>
+    <td class="tg-0lax">332</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Friedrich Nietzsche</td>
+    <td class="tg-0lax">331</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Bertrand Russell</td>
+    <td class="tg-0lax">314</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Aristotle</td>
+    <td class="tg-0lax">309</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Gottfried Leibniz</td>
+    <td class="tg-0lax">296</td>
+  </tr>
+</tbody>
+</table>
+
 As seen, almost all of the Philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other Philosophers point to the Philosopher in question and out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to in many other Philosopher Wikipedia pages, or link to other Philosophers Wikipedia pages. 
 
 #### Scatterplot (in out correlation)
