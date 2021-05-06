@@ -35,7 +35,7 @@ $$Density = \frac{|E|}{|E|(|E|-1)} = ???$$
 where |E| denotes the number of links. As seen, the network is very sparse (since the density is closer to 0 than 1) and this is what we expect from real world networks. 
 #### Degree (plots log-trans: mean median min max)
 Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network we will have a in, and an out-degree for each Philosopher. Naturally, the sum of the in and out-degrees must be identical since _what goes around comes around_. 
-<img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+<img src="/assets/img/Directed_phil_dist.png.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
 
 As seen, the average in-degree is ??? and the average out-degree is ???. Since we have log-log transformed the x- and y-axis in the plot, it is apparent that the degree distribution is not normally distributed, but instead is very heavy tailed - meaning that we have some very high degree nodes relative to the averages. In layman terms, this simply means that some philosophers have alot of in and out-going links. 
 
