@@ -140,19 +140,20 @@ LOREM IPSUM
 ### Deeper Analisys (not sure yet)
 #### Communities
 In Philosophy, there are many subareas of interest, and often Philosophers will dip their toes into many different core areas. Think of seminal figures such as Immanuel Kant or Aristotle who both explored and influenced almost all branches of philosophy – what is their respective core area? For us, we may be temped to say that Immanuel Kant was an ethicist first and foremost, and Aristotle was an aesthetic, but we cannot rely on our individual opinions (although they may be correct) when trying to build a proper network via. the Wikipedia data gathered. However, Wikipedia gracefully provides a list of branches and their respective key philosophers. According to Wikipedia, philosophy can be divided into the following branches: 
-•	Aestheticians
-•	Epistemologists
-•	Ethicists
-•	Logicians
-•	Metaphysicians
-•	Social and political philosophers
+-	Aestheticians
+-	Epistemologists
+-	Ethicists
+-	Logicians
+-	Metaphysicians
+-	Social and political philosophers
+-	
 It would be nice if these sets were already disjoint – meaning that a philosopher could only be in one of the branch lists. However, in accordance with the points made before, many of the philosophers appear in multiple branches, and only a select few can be directly assigned a core area based on the provided branch lists. We provide the non-technical reader with the following Venn-diagram to understand the dilemma (using Jeremy Bentham as an example): 
 
 <img src="/assets/img/Venn.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
-As seen, Jeremy Bentham is a member of three philosophical core areas according to Wikipedia, and given the ambiguity how should do we choose which core area is his main core area in a meaningful way? Furthermore, some philosophers do not appear in any of the core area lists, and how do we appropriately determine their philosophical core area? Unfortunately, there is no perfect way of doing this, but one way is to utilize the network structure to create meaningful classifications of philosophical core areas for those philosophers who do appear in any core area list, and for those that appear in many and are therefore ambiguous to classify. The process is as follows: 
-•	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
-•	Next, for each ambiguous philosopher (those who appear in more than one branch of philosophy), iterate over the branches of philosophy the philosopher is apart of. Then count the number of neighbors in each of those branches, and finally assign the core area as being the branch with the most neighbors. 
-•	Finally, for all philosophers that do not appear in any branch of philosophy, iterate through neighbors and assign the core area based on a majority vote.  
+As seen, Jeremy Bentham is a member of three philosophical branches according to Wikipedia, and given the ambiguity how should do we choose which branch is his main core area in a meaningful way? Furthermore, some philosophers do not appear in any of the branch lists, and how do we appropriately determine their philosophical core area? Unfortunately, there is no perfect way of doing this, but one way is to utilize the network structure to create meaningful classifications of philosophical core areas for those philosophers who do not appear in any branch list, and for those that appear in many and are therefore ambiguous to classify. The process is as follows: 
+-	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
+-	Next, for each ambiguous philosopher (those who appear in more than one branch of philosophy), iterate over the branches of philosophy the philosopher is apart of. Then count the number of neighbors in each of those branches, and finally assign the core area as being the branch with the most neighbors. 
+-	Finally, for all philosophers that do not appear in any branch of philosophy, iterate through neighbors and assign the core area based on a majority vote.  
 By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method described above later. However, for now, we will continue by creating the subgraphs for each branch of philosophy. 
 
 #### Some advanced investigations and discussions
