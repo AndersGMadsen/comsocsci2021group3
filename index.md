@@ -41,119 +41,73 @@ As seen, the average in-degree is ??? and the average out-degree is ???. Since w
 
 #### Top 5 in/out degree
 But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-baqh{text-align:center;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg">
+<table>
 <thead>
   <tr>
-    <th class="tg-baqh" colspan="2"><span style="font-weight:bold">Top 10 Philosophers (in-degree)</span></th>
+    <th colspan="2">Top 10 philosophers (in-degree)</th>
+    <th colspan="2">Top 10 philosophers (out-degree)</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">Aristotle</td>
-    <td class="tg-0lax">537</td>
+    <td>Aristotle</td>
+    <td>537</td>
+    <td>Plato</td>
+    <td>379</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Immanuel Kant</td>
-    <td class="tg-0lax">531</td>
+    <td>Immanuel Kant</td>
+    <td>531</td>
+    <td>Immanuel Kant</td>
+    <td>372</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Plato</td>
-    <td class="tg-0lax">440</td>
+    <td>Plato</td>
+    <td>440</td>
+    <td>Baruch Spinoza</td>
+    <td>348</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Georg Wilhelm Friedrich Hegel</td>
-    <td class="tg-0lax">423</td>
+    <td>Georg Wilhelm Friedrich Hegel</td>
+    <td>423</td>
+    <td>Georg Wilhelm Friedrich Hegel</td>
+    <td>346</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Thomas Aquinas</td>
-    <td class="tg-0lax">398</td>
+    <td>Thomas Aquinas</td>
+    <td>398</td>
+    <td>Augustine of Hippo</td>
+    <td>340</td>
   </tr>
   <tr>
-    <td class="tg-0lax">David Hume</td>
-    <td class="tg-0lax">391</td>
+    <td>David Hume</td>
+    <td>391</td>
+    <td>David Hume</td>
+    <td>332</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Augustine of Hippo</td>
-    <td class="tg-0lax">385</td>
+    <td>Augustine of Hippo</td>
+    <td>385</td>
+    <td>Friedrich Nietzsche</td>
+    <td>331</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Friedrich Nietzsche</td>
-    <td class="tg-0lax">367</td>
+    <td>Friedrich Nietzsche</td>
+    <td>367</td>
+    <td>Bertrand Russell</td>
+    <td>314</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Karl Marx</td>
-    <td class="tg-0lax">363</td>
+    <td>Karl Marx</td>
+    <td>363</td>
+    <td>Aristotle</td>
+    <td>309</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Bertrand Russell</td>
-    <td class="tg-0lax">360</td>
-  </tr>
-</tbody>
-</table>
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0lax" colspan="2"><span style="font-weight:bold">Top 10 philosophers (out-degree)</span></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0lax">Plato</td>
-    <td class="tg-0lax">379</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Immanuel Kant</td>
-    <td class="tg-0lax">372</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Baruch Spinoza</td>
-    <td class="tg-0lax">348</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Georg Wilhelm Friedrich Hegel</td>
-    <td class="tg-0lax">346</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Augustine of Hippo</td>
-    <td class="tg-0lax">340</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">David Hume</td>
-    <td class="tg-0lax">332</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Friedrich Nietzsche</td>
-    <td class="tg-0lax">331</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Bertrand Russell</td>
-    <td class="tg-0lax">314</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Aristotle</td>
-    <td class="tg-0lax">309</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Gottfried Leibniz</td>
-    <td class="tg-0lax">296</td>
+    <td>Bertrand Russell</td>
+    <td>360</td>
+    <td>Gottfried Leibniz</td>
+    <td>296</td>
   </tr>
 </tbody>
 </table>
