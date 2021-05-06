@@ -32,12 +32,6 @@ function vis(new_controls) {
     .style("height", height + "px").node()
   context.scale(devicePixelRatio, devicePixelRatio)
 
-  //context.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#69b3a2")
-  //context.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "#404080")
-  //context.append("text").attr("x", 220).attr("y", 130).text("variable A").style("font-size", "15px").attr("alignment-baseline","middle")
-  //context.append("text").attr("x", 220).attr("y", 160).text("variable B").style("font-size", "15px").attr("alignment-baseline","middle")
-
-
   // Input/Output //
   // ------------ //
 
@@ -86,7 +80,7 @@ function vis(new_controls) {
   });
 
   controls['file_path'] = "graph.json";
-  if (controls['file_path'] == "") controls['file_path'] = "https://gist.githubusercontent.com/ulfaslak/6be66de1ac3288d5c1d9452570cbba5a/raw/0b9595c09b9f70a77ee05ca16d5a8b42a9130c9e/miserables.json";
+  //controls['file_path'] = "https://gist.githubusercontent.com/ulfaslak/6be66de1ac3288d5c1d9452570cbba5a/raw/0b9595c09b9f70a77ee05ca16d5a8b42a9130c9e/miserables.json";
 
   // Force layout
   var simulation = d3.forceSimulation()
@@ -118,9 +112,54 @@ function vis(new_controls) {
     context.globalCompositeOperation = "source-over";
     graph.nodes.forEach(drawNode);
     graph.nodes.forEach(drawText);
-    context.fillStyle = "red";
-    context.textAlign = "center";
-    context.fillText("Hello World", canvas.width/2, canvas.height/2);
+
+    context.font = "18px Helvetica";
+    context.fillStyle = "#000000";
+    context.fillText("Epistemologists", width*0.80, height*0.04);
+    context.beginPath();
+    context.arc(width*0.78, height*0.03, 9, 0, Math.PI*2, false);
+    context.fillStyle = '#FC7634';
+    context.fill();
+
+    context.font = "18px Helvetica";
+    context.fillStyle = "#000000";
+    context.fillText("Metaphysicians", width*0.80, height*0.08);
+    context.beginPath();
+    context.arc(width*0.78, height*0.07, 9, 0, Math.PI*2, false);
+    context.fillStyle = "#1FD082";
+    context.fill();
+
+    context.font = "18px Helvetica";
+    context.fillStyle = "#000000";
+    context.fillText("Logicians", width*0.80, height*0.12);
+    context.beginPath();
+    context.arc(width*0.78, height*0.11, 9, 0, Math.PI*2, false);
+    context.fillStyle = '#030F4F';
+    context.fill();
+
+    context.font = "18px Helvetica";
+    context.fillStyle = "#000000";
+    context.fillText("Sociopoliticals", width*0.80, height*0.16);
+    context.beginPath();
+    context.arc(width*0.78, height*0.15, 9, 0, Math.PI*2, false);
+    context.fillStyle = '#F6D04D';
+    context.fill();
+
+    context.font = "18px Helvetica";
+    context.fillStyle = "#000000";
+    context.fillText("Ethicists", width*0.80, height*0.20);
+    context.beginPath();
+    context.arc(width*0.78, height*0.19, 9, 0, Math.PI*2, false);
+    context.fillStyle = '#2F3EEA';
+    context.fill();
+
+    context.font = "18px Helvetica";
+    context.fillStyle = "#000000";
+    context.fillText("Aestheticians", width*0.80, height*0.24);
+    context.beginPath();
+    context.arc(width*0.78, height*0.23, 9, 0, Math.PI*2, false);
+    context.fillStyle = '#E83F48';
+    context.fill();
   }
 
   // Restart simulation
