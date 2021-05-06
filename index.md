@@ -146,7 +146,7 @@ In Philosophy, there are many subareas of interest, and often Philosophers will 
 -	Logicians
 -	Metaphysicians
 -	Social and political philosophers
--	
+
 It would be nice if these sets were already disjoint – meaning that a philosopher could only be in one of the branch lists. However, in accordance with the points made before, many of the philosophers appear in multiple branches, and only a select few can be directly assigned a core area based on the provided branch lists. We provide the non-technical reader with the following Venn-diagram to understand the dilemma (using Jeremy Bentham as an example): 
 
 <img src="/assets/img/Venn.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
@@ -154,6 +154,7 @@ As seen, Jeremy Bentham is a member of three philosophical branches according to
 -	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
 -	Next, for each ambiguous philosopher (those who appear in more than one branch of philosophy), iterate over the branches of philosophy the philosopher is apart of. Then count the number of neighbors in each of those branches, and finally assign the core area as being the branch with the most neighbors. 
 -	Finally, for all philosophers that do not appear in any branch of philosophy, iterate through neighbors and assign the core area based on a majority vote.  
+-	
 By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method described above later. However, for now, we will continue by creating the subgraphs for each branch of philosophy. 
 
 #### Some advanced investigations and discussions
