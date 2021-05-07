@@ -1,6 +1,4 @@
 # comsocsci2021group3
-
-# Easy 12
 <!--<iframe align=middle id="serviceFrameSend" width="100%" height="800" frameborder="0" src="network/complete/index.html"></iframe>-->
 
 ### Why Philosophy?
@@ -120,22 +118,40 @@ Continuing on the last point made above, we now investigate if there a correlati
 The above plot shows the respective in- and out-degrees for each Philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a philosophers' in-degree to reveal something about the appertaining out-degree - namely that philosophers with high in-degree also have high out-degree, and low in-degree philosophers have low out-degree. 
 
 ### Initial text 
-Our main goal with the following text analysis is to utilize NLP tools that we have learned throughout the course to get an deeper insight about the content in the different philosopher body text as well as the larger corpuses based on known core-areas and the interpreted ones based on network connections. Using different methods such as term-frequency (TF), term frequency–inverse document frequency and WordClouds, we want to find out which words describes each philosopher as well as categorized documents and discuss whether the result was expected or not. Furthermore, this could contribute to the investigation of whether our split seems meaningful or not.
+Our main goal with the following text analysis is to utilize NLP tools that we have learned throughout the course to get an deeper insight about the content in the different philosopher body text as well as the larger corpuses based on known core-areas and the interpreted ones based on network connections. Using different methods such as term-frequency (TF), term frequency–inverse document frequency (TF-IDF) and WordClouds (WC), we want to find out how well we are able to describe each philosopher as well as categorized documents and discuss whether the result was expected or not. Furthermore, this could contribute to the investigation of whether our split seems meaningful or not.
 
-Before abovementioned tools can be utilized, a tokenization (separate each word from each other) of the individual philosophers content-variable is performed using Natural Language Tool Kit's (NLTK)  `word_tokenize` followed by a cleaning procedure using regular expression (regex) for removing punctuation as well as setting every word to lowercase. Moreover, every _stopword_ is removed using NLTK's `nltk.corpus.stopwords.words('english')`, which is sufficient as the corpus is in English while at last, every word is stemmed using the `SnowballStemmer` from the NLTK library. 
-
-#### WikiPedia page count
-LOREM IPSUM 
-#### Content
-LOREM IPSUM
 #### Cleaning
-LOREM IPSUM
+Before abovementioned tools can be utilized, a tokenization (separate each word from each other) of the individual philosophers content-variable is performed using Natural Language Tool Kit's (NLTK)  `word_tokenize` followed by a cleaning procedure using regular expression (regex). Using this, following has been cleaned out to the best of our ability;
+- Punctuation
+- Stopwords using NLTK's `nltk.corpus.stopwords.words('english')`, which is sufficient as the corpus is in English
+- Numbers
+- "'s" as these aren't removed above
+- Names of philosophers based on our page-titles
+Note that further into the text analysis, we stem every token using the `SnowballStemmer` from the NLTK library. However, this is only done for the examining the lexical diversity. The reasoning for this choice is that we got the most sensible results for interpreting the documents without stemming, and that lexical diversity is best described using stemmed words.
+
 #### TF-IDF
+The aim of the Term frequency - Inverse document frequency metric is to reflect the importance of a term in the document, wighting it according to the whole corpus that the document is a part of. Essentially, a high frequency of the term will give it a higher value, while the IDF will reduce it's value relative to how often appears in the rest of the corpus. Therefore, the formular is as simple as:
+$$
+\operatorname{idf}(t,d,D) = \operatorname{tf}(t,d) \cdot \operatorname{idf}(t,D)
+$$
+While there are many ways to calculate the TF, we have chosen to simply use the raw count of the particular word - the number of time it appears in the document. The reasoning for this is simply that it will work well mathematically when we want to weight words in the WordClouds later. The math behind the IDF is only a bit more complicated as it has the following formular:
+$$
+\operatorname{idf}(t, D)=\log \frac{N}{|\{d \in D: t \in d\}|}
+$$
+where $N=|D|$ i.e. the number of documents in the corpus, and $|\{d \in D: t \in d\}|$ is the number of documents in the corpus in which _t_ appears. To get a full overview of the most frequent terms or highest TF-IDF score for each philosopher and core-area, we refer to the notebook. Based on the TF and TF-IDF measures, we have constructed several WordCloud's which for now will be our center of attention. 
+
 LOREM IPSUM
 #### Sentiment Analisys
 LOREM IPSUM
 #### Lexical Diversity
 LOREM IPSUM 
+
+
+#### WikiPedia page count
+LOREM IPSUM 
+#### Content
+LOREM IPSUM
+
 ### Deeper Analisys (not sure yet)
 #### Betweenness centrality 
 Another interesting investigation in the philosophy network is to compute the betweenness centrality of nodes. In this definition of centrality (and there are many definitions!) nodes that occur in many shortest paths are considered central in the graph and thus have high centrality scores.
