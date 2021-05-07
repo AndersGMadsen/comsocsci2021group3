@@ -18,6 +18,14 @@ iframe {
   width: 100%;
 }
 
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @import "{{ site.theme }}";
 
 .main-content {
@@ -29,4 +37,12 @@ iframe {
   display: block;
   border-style: none;
   width:100%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
