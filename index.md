@@ -1,7 +1,7 @@
 # comsocsci2021group3
 
 # Easy 12!
-<iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="netwulf/network1/index.html"></iframe>
+<iframe align=middle id="serviceFrameSend" width="100%" height="700" frameborder="0" src="netwulf/network1/index.html"></iframe>
 
 
 ### Why Philosophy?
@@ -817,8 +817,8 @@ Small world property, Clustering, Betweenness, Assortiveness etc.
 #### TF-IDF for communities
 #### 
 
-<iframe width="100%" height="764" frameborder="0"
-  src="https://observablehq.com/embed/@andersgmadsen/untitled/2?cells=chart"></iframe>
+<!--<iframe width="100%" height="764" frameborder="0"
+  src="https://observablehq.com/embed/@andersgmadsen/untitled/2?cells=chart"></iframe>-->
 
 # Pitch
 <iframe width="1730" height="695" src="https://www.youtube.com/embed/nr-eFXzQNGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
