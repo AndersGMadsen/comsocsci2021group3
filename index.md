@@ -43,7 +43,7 @@ As seen, the average in- and out-degree are the same (what goes around must come
 #### Top 5 in/out degree
 But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
 <center>
-<table class="tg">
+<!--<table class="tg">
 <thead>
   <tr>
     <th class="tg-rz17" colspan="2"><span style="font-weight:bold">Top 10 philosophers (in-degree)</span></th>
@@ -112,7 +112,19 @@ But who are the top 10 philosophers in terms of in/out-degree? The table below s
     <td class="tg-nnys">296</td>
   </tr>
 </tbody>
-</table>
+</table>-->
+| Top 10 philosophers (in-degree) |     | Top 10 philosophers (out-degree) |     |
+|:-------------------------------:|:---:|:--------------------------------:|:---:|
+|            Aristotle            | 535 |               Plato              | 379 |
+|          Immanuel Kant          | 530 |           Immanuel Kant          | 370 |
+|              Plato              | 438 |          Baruch Spinoza          | 348 |
+|  Georg Wilhelm Friedrich Hegel  | 422 |   Georg Wilhelm Friedrich Hegel  | 346 |
+|          Thomas Aquinas         | 397 |        Augustine of Hippo        | 338 |
+|            David Hume           | 390 |        Friedrich Nietzsche       | 331 |
+|        Augustine of Hippo       | 384 |            David Hume            | 329 |
+|       Friedrich Nietzsche       | 366 |         Bertrand Russell         | 314 |
+|            Karl Marx            | 362 |             Aristotle            | 309 |
+|         Bertrand Russell        | 358 |         Gottfried Leibniz        | 296 |
 </center>
 
 As seen, almost all of the Philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other Philosophers point to the Philosopher in question and out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to in many other Philosopher Wikipedia pages, or link to other Philosophers Wikipedia pages. 
