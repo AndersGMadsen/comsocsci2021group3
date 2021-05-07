@@ -386,6 +386,9 @@ Small world property, Clustering, Betweenness, Assortiveness etc.
 <!--<iframe width="100%" height="764" frameborder="0"
   src="https://observablehq.com/embed/@andersgmadsen/untitled/2?cells=chart"></iframe>-->
 
+
+<iframe align=middle id="serviceFrameSend" width=700 height=1100 frameborder="0" src="table1.html"></iframe>
+
 # Pitch
 <iframe width="1730" height="695" src="https://www.youtube.com/embed/nr-eFXzQNGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
