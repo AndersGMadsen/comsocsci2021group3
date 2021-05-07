@@ -258,10 +258,10 @@ For each branch of philosophy, we create a subgraph by utilizing both the core a
 ##### Sociopoliticals
 
 <div style='display:inline-block;'>
-    <div style='float:left; width:50%'>
+    <div style='float:right; width:50%'>
         <img style="width: 100%;" src="assets/img/sociopoliticals.png" alt="Degree distribution (directed)"/>
     </div>
-    <div style='float:right; width:50%'>
+    <div style='float:left; width:50%'>
         <table>
            <thead>
              <tr>
