@@ -230,7 +230,7 @@ As a small thought experiment, imagine two groups of junior developers that are 
 Using a called the Louvain algorithm, we can determine the best partition for the philosophy network, i.e. the partition that leads to the highest modularity score. The two graphs below show (left) the best partitioning found using the Louvain algorithm, and (right) the partitioning we created using the branches of philosophy as a baseline. 
 
 
-INDSÆT GRAFTER FOR LOUVAIN OG VORES PARTITION. 
+<img style="width: 70%;" src="assets/img/modularity_network.png" alt="Degree distribution (directed)"/>
 
 
 As seen, the modularity for the Louvain partition is much higher than the partition we found using our methods. On a brighter note, our partition does seem to have some modularity as some node colors appear to be clustered together in the graph. It can however be a quite unfair evaluation to compare partitions against the Louvain partition as it becomes increasingly difficult to keep a high modularity as the number of edges and links grow. Therefore, using an algorithm that creates suitable random versions of a given partition, we statistically evaluate how likely our computed modularity is under the assumption that it was created randomly.  
