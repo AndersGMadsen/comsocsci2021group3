@@ -5,23 +5,23 @@
 
 # Test
 <div style="display: table-row">
-        <button onclick="location.href = 'network/sociopoliticals/index.html';" class="button" style="min-width: 250px; height: 250px; background-color: #F6D04D">
-                <span>Sociopoliticals</span>
+        <button onclick="location.href = 'network/sociopoliticals/index.html';" class="button" style="min-width: 210px; height: 210px; background-color: #F6D04D">
+        	<span>Sociopoliticals</span>
         </button>
-        <button onclick="location.href = 'network/metaphysicians/index.html';" class="button" style="min-width: 230px; height: 230px; background-color: #1FD082">
-                <span>Metaphysicians</span>
+        <button onclick="location.href = 'network/metaphysicians/index.html';" class="button" style="min-width: 190px; height: 190px; background-color: #1FD082">
+        	<span>Metaphysicians</span>
         </button>
-        <button onclick="location.href = 'network/logicians/index.html';" class="button" style="min-width: 180px; height: 180px; background-color: #030F4F">
-                <span>Logicians</span>
+        <button onclick="location.href = 'network/logicians/index.html';" class="button" style="min-width: 140px; height: 140px; background-color: #030F4F">
+        	<span>Logicians</span>
         </button>
-        <button onclick="location.href = 'network/epistemologists/index.html';" class="button" style="min-width: 210px; height: 210px; background-color: #FC7634">
-                <span>Epistemologists</span>
+        <button onclick="location.href = 'network/epistemologists/index.html';" class="button" style="min-width: 170px; height: 170px; background-color: #FC7634">
+        	<span>Epistemologists</span>
         </button>
-        <button onclick="location.href = 'network/aestheticians/index.html';" class="button" style="min-width: 180px; height: 180px; background-color: #E83F48">
-                <span>Aestheticians</span>
+        <button onclick="location.href = 'network/aestheticians/index.html';" class="button" style="min-width: 140px; height: 140px; background-color: #E83F48">
+        	<span>Aestheticians</span>
         </button>
-        <button onclick="location.href = 'network/ethicists/index.html';" class="button" style="min-width: 210px; height: 210px; background-color: #2F3EEA">
-                <span>Ethicists</span>
+        <button onclick="location.href = 'network/ethicists/index.html';" class="button" style="min-width: 170px; height: 170px; background-color: #2F3EEA">
+        	<span>Ethicists</span>
         </button>
 </div>
 
