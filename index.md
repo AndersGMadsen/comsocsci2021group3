@@ -42,76 +42,77 @@ As seen, the average in- and out-degree are the same (what goes around must come
 
 #### Top 5 in/out degree
 But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
-<table class="table">
+<table class="tg">
 <thead>
   <tr>
-    <th colspan="2">Top 10 philosophers (in-degree)</th>
-    <th colspan="2">Top 10 philosophers (out-degree)</th>
+    <th class="tg-rz17" colspan="2"><span style="font-weight:bold">Top 10 philosophers (in-degree)</span></th>
+    <th class="tg-rz17" colspan="2"><span style="font-weight:bold">Top 10 philosophers (out-degree)</span></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Aristotle</td>
-    <td>535</td>
-    <td>Plato</td>
-    <td>379</td>
+    <td class="tg-nnys">Aristotle</td>
+    <td class="tg-nnys">535</td>
+    <td class="tg-nnys">Plato</td>
+    <td class="tg-nnys">379</td>
   </tr>
   <tr>
-    <td>Immanuel Kant</td>
-    <td>530</td>
-    <td>Immanuel Kant</td>
-    <td>370</td>
+    <td class="tg-nnys">Immanuel Kant</td>
+    <td class="tg-nnys">530</td>
+    <td class="tg-nnys">Immanuel Kant</td>
+    <td class="tg-nnys">370</td>
   </tr>
   <tr>
-    <td>Plato</td>
-    <td>438</td>
-    <td>Baruch Spinoza</td>
-    <td>348</td>
+    <td class="tg-nnys">Plato</td>
+    <td class="tg-nnys">438</td>
+    <td class="tg-nnys">Baruch Spinoza</td>
+    <td class="tg-nnys">348</td>
   </tr>
   <tr>
-    <td>Georg Wilhelm Friedrich Hegel</td>
-    <td>422</td>
-    <td>Georg Wilhelm Friedrich Hegel</td>
-    <td>346</td>
+    <td class="tg-nnys">Georg Wilhelm Friedrich Hegel</td>
+    <td class="tg-nnys">422</td>
+    <td class="tg-nnys">Georg Wilhelm Friedrich Hegel</td>
+    <td class="tg-nnys">346</td>
   </tr>
   <tr>
-    <td>Thomas Aquinas</td>
-    <td>397</td>
-    <td>Augustine of Hippo</td>
-    <td>338</td>
+    <td class="tg-nnys">Thomas Aquinas</td>
+    <td class="tg-nnys">397</td>
+    <td class="tg-nnys">Augustine of Hippo</td>
+    <td class="tg-nnys">338</td>
   </tr>
   <tr>
-    <td>David Hume</td>
-    <td>390</td>
-    <td>Friedrich Nietzsche</td>
-    <td>331</td>
+    <td class="tg-nnys">David Hume</td>
+    <td class="tg-nnys">390</td>
+    <td class="tg-nnys">Friedrich Nietzsche</td>
+    <td class="tg-nnys">331</td>
   </tr>
   <tr>
-    <td>Augustine of Hippo</td>
-    <td>384</td>
-    <td>David Hume</td>
-    <td>329</td>
+    <td class="tg-nnys">Augustine of Hippo</td>
+    <td class="tg-nnys">384</td>
+    <td class="tg-nnys">David Hume</td>
+    <td class="tg-nnys">329</td>
   </tr>
   <tr>
-    <td>Friedrich Nietzsche</td>
-    <td>366</td>
-    <td>Bertrand Russell</td>
-    <td>314</td>
+    <td class="tg-nnys">Friedrich Nietzsche</td>
+    <td class="tg-nnys">366</td>
+    <td class="tg-nnys">Bertrand Russell</td>
+    <td class="tg-nnys">314</td>
   </tr>
   <tr>
-    <td>Karl Marx</td>
-    <td>362</td>
-    <td>Aristotle</td>
-    <td>309</td>
+    <td class="tg-nnys">Karl Marx</td>
+    <td class="tg-nnys">362</td>
+    <td class="tg-nnys">Aristotle</td>
+    <td class="tg-nnys">309</td>
   </tr>
   <tr>
-    <td>Bertrand Russell</td>
-    <td>358</td>
-    <td>Gottfried Leibniz</td>
-    <td>296</td>
+    <td class="tg-nnys">Bertrand Russell</td>
+    <td class="tg-nnys">358</td>
+    <td class="tg-nnys">Gottfried Leibniz</td>
+    <td class="tg-nnys">296</td>
   </tr>
 </tbody>
 </table>
+
 As seen, almost all of the Philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other Philosophers point to the Philosopher in question and out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to in many other Philosopher Wikipedia pages, or link to other Philosophers Wikipedia pages. 
 
 #### Scatterplot (in out correlation)
@@ -145,52 +146,52 @@ Another interesting investigation in the philosophy network is to compute the be
 An intuitive way of thinking about betweenness centrality score is to consider the consumer airline network, specifically flight logistics. Imagine you live in Denmark and you are trying to book a flight from Copenhagen to a tiny island off the coast of Africa. How would your flight route look? You probably would not fly directly to the island since such a route (path) does not exist. On the other hand, your itinerary would probably not involve having you fly to Russia or the USA for a layover either. The most efficient route (i.e., the shortest path) would probably include a layover in a popular airport in Europe, like Amsterdam, and/or a layover in an airport closer to your destination, like Dubai. Big airports enable many possible flight routes, i.e., the shortest paths, and are very central to the aerospace network and thus have high betweenness centrality.
 For our philosopher network, the centrality betweenness becomes slightly more abstract, as links are now not flight routes but rather hyperlinks between Wikipedia pages. It does however still indicate the most central philosophers in the graph. The table below shows the most central philosophers in the directed philosophy network.
 
-<table class="table">
+<table class="tg">
 <thead>
   <tr>
-    <th colspan="2">Top 10 philosophers (betweenness centrality</th>
+    <th class="tg-rz17" colspan="2"><span style="font-weight:bold">Top 10 philosophers (betweenness centrality</span></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Immanuel Kant</td>
-    <td>0.044</td>
+    <td class="tg-nnys">Immanuel Kant</td>
+    <td class="tg-nnys">0.044</td>
   </tr>
   <tr>
-    <td>Aristotle</td>
-    <td>0.043</td>
+    <td class="tg-nnys">Aristotle</td>
+    <td class="tg-nnys">0.043</td>
   </tr>
   <tr>
-    <td>Plato</td>
-    <td>0.037</td>
+    <td class="tg-nnys">Plato</td>
+    <td class="tg-nnys">0.037</td>
   </tr>
   <tr>
-    <td>Georg Wilhelm Friedrich Hegel</td>
-    <td>0.028</td>
+    <td class="tg-nnys">Georg Wilhelm Friedrich Hegel</td>
+    <td class="tg-nnys">0.028</td>
   </tr>
   <tr>
-    <td>Bertrand Russell</td>
-    <td>0.024</td>
+    <td class="tg-nnys">Bertrand Russell</td>
+    <td class="tg-nnys">0.024</td>
   </tr>
   <tr>
-    <td>Friedrich Nietzsche</td>
-    <td>0.023</td>
+    <td class="tg-nnys">Friedrich Nietzsche</td>
+    <td class="tg-nnys">0.023</td>
   </tr>
   <tr>
-    <td>René Descartes</td>
-    <td>0.021</td>
+    <td class="tg-nnys">René Descartes</td>
+    <td class="tg-nnys">0.021</td>
   </tr>
   <tr>
-    <td>David Hume</td>
-    <td>0.021</td>
+    <td class="tg-nnys">David Hume</td>
+    <td class="tg-nnys">0.021</td>
   </tr>
   <tr>
-    <td>Maimonides</td>
-    <td>0.020</td>
+    <td class="tg-nnys">Maimonides</td>
+    <td class="tg-nnys">0.020</td>
   </tr>
   <tr>
-    <td>Karl Marx</td>
-    <td>0.019</td>
+    <td class="tg-nnys">Karl Marx</td>
+    <td class="tg-nnys">0.019</td>
   </tr>
 </tbody>
 </table>
