@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+body {
+  font-family: "Computer Modern", sans-serif;
+}
+
 .parent_div {
 	height: 100%;
 	max-width: 100%;
@@ -26,11 +51,11 @@
 }
 
 .swal2-text {
-	font-family: 'Open sans', sans-serif; color: #777777; font-size: 14px;
+	font-family: "Computer Modern", sans-serif; color: #777777; font-size: 14px;
 }
 
 .swal2-popup {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
+    font-family: "Computer Modern", sans-serif;
 }
 
 .tg {
