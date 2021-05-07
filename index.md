@@ -3,12 +3,6 @@
 # Easy 12!
 <iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="test/index.html"></iframe>
 
-# Overraskelse
-<iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="plot1.html"></iframe>
-
-# Overraskelse 2
-<iframe align=middle id="serviceFrameSend" width="80%" frameborder="0" src="plot2.html"></iframe>
-
 
 ### Why Philosophy?
 The following will be a deep dive into the realm of Philosophy. The curious adolescent minds of students are often intrigued by the endless void that is philosophy. From the abstract (but logical) language games of Wittgenstein to the rigorous logic and wittiness of his mentor Bertrand Russell. From the ambitious ethical duties of Immanuel Kant to the computational proxies of Jeremy Bentham and John Stuart Mill (and perhaps beyond good and evil with Friedrich Nietzsche). Perhaps one is going through an existential crisis and seek refuge in the works of Albert Camus or Sartre. Perhaps one turns to the stoics for inspirational quotes to scribble on the wall of one’s start-up garage-office while micro-dosing LSD, honing the art of Brazilian Jiu Jitsu and filming a-day-in-the-life-of-an-entrepreneur for one’s YouTube channel. Whatever the reason may be, one thing remains a challenge for one’s philosophical endeavors: time – hence why philosophy is a void. The endless hours needed to get a decent overview of all of philosophy exceeds one human life, perhaps even hundreds (maybe thousands). Consequently, with the help of Wikipedia, some network theory, and some computational semantics we strive to create just that. The project revolves around creating a network of Philosophy using data from Wikipedia. The project also strives to be accessible to non-scientific readers. 
@@ -40,7 +34,7 @@ where |E| denotes the number of links. As seen, the network is very sparse (sinc
 #### Degree (plots log-trans: mean median min max)
 Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network we will have both an in- and an out-degree for each Philosopher. Naturally, the sum of the in and out-degrees must be identical since _what goes around comes around_.
 
-<img style="width: 60%;" src="assets/img/Directed_phil_dist_dir.png" alt="Degree distribution (directed)"/>
+<iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="plot1.html"></iframe>
 
 As seen, the average in- and out-degree are the same (what goes around must come around). Since we have log-log transformed the x- and y-axis in the plot, it is apparent that the degree distribution is not normally distributed, but instead is very heavy tailed - meaning that we have some very high degree nodes relative to the averages. In layman terms, this simply means that some philosophers have alot of in and out-going links.
 
@@ -122,7 +116,7 @@ As seen, all of the philosophers seen in the table are well-known seminal figure
 #### Scatterplot (in out correlation)
 Continuing on the last point made above, we now investigate if there a correlation between the in- and out-degree for philosophers.
 
-<img src="assets/img/Scatter_dir_degree.png" alt="Scatterplot for in-out"/>
+<iframe align=middle id="serviceFrameSend" width=684 heigth=684 frameborder="0" src="plot2.html"></iframe>
 
 The above plot shows the respective in- and out-degrees for each Philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a philosophers' in-degree to reveal something about the appertaining out-degree - namely that philosophers with high in-degree also have high out-degree, and low in-degree philosophers have low out-degree. 
 
