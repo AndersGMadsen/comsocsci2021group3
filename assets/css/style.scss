@@ -7,6 +7,8 @@
   background-size: 100% 100%;
 }*/
 
+@import "{{ site.theme }}";
+
 .main-content {
     max-width: 84rem;
 }
@@ -16,6 +18,4 @@ iframe {
     display: block;
     border-style: none;
 }
-
-@import "{{ site.theme }}";
 
