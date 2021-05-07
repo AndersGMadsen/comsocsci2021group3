@@ -18,9 +18,9 @@ As the project developed, more attributes were gathered as they could provide us
 
 ### Initial Graph
 #### To be or not to be.. directed or undirected
-As we wish to get a nice overview of the Philosophy Network, we must consider whether the network should be directed or undirected. The case for making the network directed is that we preserve the integrity of the Wikipedia link structure. Hyperlinks only point one way, and thus a directed graph shows which Philosopher Wikipedia-pages point to others. However, since the number of Philosophers is finite, we also know the incoming links to each Philosopher. On the other hand, the undirected version of the Philosophy Network gives a more general overview of the Wikipedia link structure and makes community detection much easier. For this project we will primarily make use of the directed Philosophy Network except when dealing with community detection (and some other network-tools). The reason for this is that many of our investigations will be less ambiguous and reveal more wrt. Wikipedia.
+As we wish to get a nice overview of the Philosophy Network, we must consider whether the network should be directed or undirected. The case for making the network directed is that we preserve the integrity of the Wikipedia link structure. Hyperlinks only point one way, and thus a directed graph shows which philosopher Wikipedia-pages point to others. However, since the number of philosophers is finite, we also know the incoming links to each philosopher. On the other hand, the undirected version of the Philosophy Network gives a more general overview of the Wikipedia link structure and makes community detection much easier. For this project we will primarily make use of the directed Philosophy Network except when dealing with community detection (and some other network-tools). The reason for this is that many of our investigations will be less ambiguous and reveal more wrt. Wikipedia. 
 
-More precisely, a directed link between a philosopher (A) and a philosopher (B) is created if there is a hyperlink from the Wikipedia page of (A) to the Wikipedia page (B). 
+More precisely, a directed link between a philosopher (A) and a philosopher (B) is created if there is a hyperlink from the Wikipedia page of (A) to the Wikipedia page (B).
 
 
 #### Nodes, links and density
@@ -30,11 +30,11 @@ Following the above algorithm for links, the Philosophy Network has a total of ?
 
 where |E| denotes the number of links. As seen, the network is very sparse (since the density is closer to 0 than 1) and this is what we expect from real world networks. 
 #### Degree (plots log-trans: mean median min max)
-Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network we will have both an in- and an out-degree for each Philosopher. Naturally, the sum of the in and out-degrees must be identical since _what goes around comes around_.
+Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network, we will have both an in- and an out-degree for each philosopher. Naturally, the sum of the in and out-degrees must be identical since what goes around comes around.
 
 <iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="plot1.html"></iframe>
 
-As seen, the average in- and out-degree are the same (what goes around must come around). Since we have log-log transformed the x- and y-axis in the plot, it is apparent that the degree distribution is not normally distributed, but instead is very heavy tailed - meaning that we have some very high degree nodes relative to the averages. In layman terms, this simply means that some philosophers have alot of in and out-going links.
+As seen, the average in- and out-degree is the same (what goes around must come around). Since we have log-log transformed the x- and y-axis in the plot, it is apparent that the degree distribution is not normally distributed, but instead is very heavy tailed - meaning that we have some very high degree nodes relative to the averages. In layman terms, this simply means that some philosophers have alot of in and out-going links.
 
 #### Top 5 in/out degree
 But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
@@ -109,14 +109,14 @@ But who are the top 10 philosophers in terms of in/out-degree? The table below s
 </tbody>
 </table>
 
-As seen, all of the philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other philosophers point to the philosopher in question while out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to from many other philosophers' Wikipedia pages, or link to other philosophers' Wikipedia pages. 
+As seen, all the philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other philosophers point to the philosopher in question while out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsurprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to from many other philosophers’ Wikipedia pages, or link to other philosophers’ Wikipedia pages.
 
 #### Scatterplot (in out correlation)
-Continuing on the last point made above, we now investigate if there a correlation between the in- and out-degree for philosophers.
+Continuing the last point made above, we now investigate if there a correlation between the in- and out-degree for philosophers.
 
 <iframe align=middle id="serviceFrameSend" width=700 height=1100 frameborder="0" src="plot2.html"></iframe>
 
-The above plot shows the respective in- and out-degrees for each Philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a philosophers' in-degree to reveal something about the appertaining out-degree - namely that philosophers with high in-degree also have high out-degree, and low in-degree philosophers have low out-degree. 
+The above plot shows the respective in- and out-degrees for each philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a philosophers’ in-degree to reveal something about the appertaining out-degree - namely that philosophers with high in-degree also have high out-degree, and low in-degree philosophers have low out-degree.
 
 ### Initial text 
 Our main goal with the following text analysis is to utilize NLP tools that we have learned throughout the course to get an deeper insight about the content in the different philosopher body text as well as the larger corpuses based on known core-areas and the interpreted ones based on network connections. Using different methods such as term-frequency (TF), term frequency–inverse document frequency (TF-IDF) and WordClouds (WC), we want to find out how well we are able to describe each philosopher as well as categorized documents and discuss whether the result was expected or not. Furthermore, this could contribute to the investigation of whether our split seems meaningful or not.
@@ -243,12 +243,12 @@ It would be nice if these branches were already disjoint – meaning that a phil
 
 <img style="width: 70%;" src="assets/img/Venn2.png" alt="Degree distribution (directed)"/>
 
-As seen, Ludwig Wittgenstein is a member of three philosophical branches according to Wikipedia, and given this ambiguity how should do one choose which branch of philosophy is his main core-area in a meaningful way? Furthermore, some philosophers do not appear in any of the branch lists, and how do we appropriately determine their philosophical core-area? Unfortunately, there is no perfect way of doing this, but one way is to utilize the network structure to create meaningful classifications of philosophical core-areas for those philosophers who do not appear in any branch list, and for those that appear in many and are therefore ambiguous to classify. The process is as follows: 
+As seen, Ludwig Wittgenstein is a member of three philosophical branches according to Wikipedia, and given this ambiguity how should one choose which branch of philosophy is his main core-area in a meaningful way? Furthermore, some philosophers do not appear in any of the branch lists, and how do we appropriately determine their philosophical core-area? Unfortunately, there is no perfect way of doing this, but one way is to utilize the network structure to create meaningful classifications of philosophical core-areas for those philosophers who do not appear in any branch list, and for those that appear in many and are therefore ambiguous to classify. The process is as follows: 
 -	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
--	Next, for each ambiguous philosopher (those who appear in more than one branch of philosophy), iterate over the branches of philosophy the philosopher is apart of. Then count the number of neighbors in each of those branches (if a particular neighbour is a part of more branches, count them both), and finally assign the core-area as being the branch with the most neighbors. 
--	Finally, for all philosophers that do not appear in any branch of philosophy, iterate through neighbors and assign the core area based on a majority vote.  
+-	Next, for each ambiguous philosopher (those who appear in more than one branch of philosophy), iterate over the branches of philosophy the philosopher is apart of. Then count the number of neighbours in each of those branches (if a particular neighbour is a part of more branches, count them all), and finally assign the core-area as being the branch with the most neighbours. 
+-	Finally, for all philosophers that do not appear in any branch of philosophy, iterate through neighbours and assign the core area based on a majority vote.   
 
-By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method above later. For now, we will continue the investigation by examining the fitness of the core-area partition.
+For now, we will continue the investigation by examining the fitness of the core-area partition.
 
 #### Modularity
 
@@ -259,7 +259,7 @@ Modularity is a way of evaluating a partition, specifically the strength of the 
 
 As a small thought experiment, imagine two groups of junior developers that are working on the same project but different specific tasks, which we will call branches, and are led by two senior developers that communicate in order optimize the efficiency of the project work. Apart from the senior developers, the two groups do not communicate with each other, meaning that each junior developer only communicates with other junior developers within their branch of the project. In this setting a partition which groups developers into two categories based on the branch in the company will lead to high modularity - even the optimal partition in this case. However, if we instead partition developers based on whether they are right- or left-handed, we would expect the modularity to be lower unless it just somehow happens that only the two senior developers are left-handed while all the junior developers are right-handed - in that case would result in the same optimal modularity.
 
-Using a called the Louvain algorithm, we can determine the best partition for the philosophy network, i.e. the partition that leads to the highest modularity score. The two graphs below show (left) the best partitioning found using the Louvain algorithm, and (right) the partitioning we created using the branches of philosophy as a baseline. 
+Using an algorithm called the Louvain algorithm, we can determine the best partition for the philosophy network, i.e. the partition that leads to the highest modularity score. The two graphs below show (left) the best partitioning found using the Louvain algorithm, and (right) the partitioning we created using the branches of philosophy as a baseline. 
 
 
 <img style="width: 70%;" src="assets/img/partitions_vs.png" alt="Degree distribution (directed)"/>
@@ -269,28 +269,28 @@ As seen, the modularity for the Louvain partition is much higher than the partit
 
 <img src="assets/img/Modularity.png" alt="Degree distribution (directed)"/>
 
-To help the reader understand what has been done, we have created a distribution of modularity scores of random networks based on the philosophy network using the core-area partition. The black line indicates the modularity score of the core-area partition. Had the black line laid within the bell-shaped curve, we would not consider the partition to be much different from any random partition of the network using the same branches of philosophy. However, because the black line lays far from the bellshaped part of the distribution, and has a much higher value, we consider the modularity of the core area split very significant – meaning that it is highly unlikely that it happened randomly. Consequently, even though the modularity score of the core-area partition is much lower than the optimal modularity found using the Louvain algorithm, it is still a very good partition of the philosophy network.  
+To help the reader understand what has been done, we have created a distribution of modularity scores of random networks based on the philosophy network using the core-area partition. The black line indicates the modularity score of the core-area partition. Had the black line laid within the bell-shaped curve, we would not consider the partition to be much different from any random partition of the network using the same branches of philosophy. However, because the black line lays far from the bell-shaped part of the distribution, and has a much higher value, we consider the modularity of the core area split very significant – meaning that it is highly unlikely that it happened randomly. Consequently, even though the modularity score of the core-area partition is much lower than the optimal modularity found using the Louvain algorithm, it is still a very good partition of the philosophy network.
 
 #### Assortativity
 
 (For simplicity, the assortativity is computed on the same undirected networks as the modularity)
 
-Another interesting network measurement is assortativity. In short, assortativity is a measure of how similar neighboring nodes are in a graph, categorized by some metric. The most standard form of assortativity is degree- assortativity which, as the name implies, is a statistical investigation that measures if nodes of the same degree tend to link to each-other. However, we will also use assortativity to investigate whether philosophers of a certain core-area are linked to other philosophers of the same core-area in the philosophy network. To supply the reader with some theoretical grounding, we generally say that a network is highly assortative if its assortativity score close to 1, and highly disassortative if the assortativity score close to -1. 
+Another interesting network measurement is assortativity. In short, assortativity is a measure of how similar neighbouring nodes are in a graph, categorized by some metric. The most standard form of assortativity is degree- assortativity which, as the name implies, is a statistical investigation that measures if nodes of the same degree tend to link to each-other. However, we will also use assortativity to investigate whether philosophers of a certain core-area are linked to other philosophers of the same core-area in the philosophy network. To supply the reader with some theoretical grounding, we generally say that a network is highly assortative if its assortativity score close to 1, and highly disassortative if the assortativity score close to -1. 
 
-For the degree of nodes we get a assortativity score of 0.03, while we get a slightly higher assortativity based on the core-areas of 0.09. This simply means that philosphers in the network are more likely to be linked to other philosophers with the same core-area, than they are to be linked to other philosophers of the same degrees. The scores are closer to 0 than to 1, and therefore we would say that we see a _slight_ assortativity for both degree and core-area. However, as with the modularity scores, we can investigate if the measures assortativity scores area significant or not. 
+For the degree of nodes, we get a assortativity score of 0.03, while we get a slightly higher assortativity based on the core-areas of 0.09. This simply means that philosophers in the network are more likely to be linked to other philosophers with the same core-area, than they are to be linked to other philosophers of the same degrees. The scores are closer to 0 than to 1, and therefore we would say that we see a slight assortativity for both degree and core-area. However, as with the modularity scores, we can investigate if the measured assortativity scores are significant or not.
 
 <img src="assets/img/degree_assortivity.png" alt="Degree distribution (directed)"/>
 <img src="assets/img/attribute_assortivity.png" alt="Degree distribution (directed)"/>
 
-As seen by the distributions above, in both cases, the measure assortativity is significantly different from what we would expect to measure had the philosophy network been randomly linked based on the core-area partitioning. This means that even though the assortativity is low, it is non-neglitable. Therefore we can conclude two things, namely than (1) in both cases the assortativity is significatn, and (2) philosophers tend to link to other philosophers of the same core-area much more than they tend to link to other philosophers with the same degree. 
+As seen by the distributions above, in both cases, the measured assortativity is significantly different from what we would expect to measure had the philosophy network been randomly linked based on the core-area partitioning. This means that even though the assortativity is low, it is non-neglectable. Therefore, we can conclude two things, namely that (1) in both cases the assortativity is significant, and (2) philosophers tend to link to other philosophers of the same core-area much more than they tend to link to other philosophers with the same degree.
 
 #### Branches of philosophy and centrality
 
-For each branch of philosophy, we create a subgraph by utilizing both the determined core-area and the original branches of philosophy, such that we acoount for both philosophers which previously did not have any core area, and philosophers which are apart of many branches. Since we now wish to create meaningful subgraphs, if a philosopher is a part of many branches, the philosopher will appear in all of the appertaining philosophy branch subgraphs. The reader can essentially think of this as updating the branch of philosophy, after classifying the philosophers using the neighbor-technique described previously, and then creating the subgraphs from the updated branches of philosophy. Thus we have kept the underlying integrity of the original branches of philosophy. 
+For each branch of philosophy, we create a subgraph by utilizing both the determined core-area and the original branches of philosophy, such that we account for both philosophers which previously did not have any core area, and philosophers which are apart of many branches. Since we now wish to create meaningful subgraphs, if a philosopher is a part of many branches, the philosopher will appear in all the appertaining philosophy branch subgraphs. The reader can essentially think of this as updating the branches of philosophy, after classifying the philosophers using the neighbour-technique described previously, and then creating the subgraphs from the updated branches of philosophy. Thus, we have kept the underlying integrity of the original branches of philosophy. 
 
-To remind the reader, the philosopher Ludwig Wittgenstein is a part of three branches of philosophy, namely metaphysics, logic and epistemology. Therefore he will appear in each those subgraphs. Furthermore, next to each subgraph we will list the top 20 philosophers based on betweenness centrality for each branch of philosophy. 
+To remind the reader, the philosopher Ludwig Wittgenstein is a part of three branches of philosophy, namely metaphysics, logic and epistemology. Therefore, he will appear in each those subgraphs. Furthermore, next to each subgraph we will list the top 20 philosophers based on betweenness centrality for each branch of philosophy. 
 
-We will provide some brief statistics for the reader to consider while exploring the graphs. Since we have not introduced clustering, the reader can think of this as the tendency for nodes in the graph to cluster together, a low clustering coefficient means that the network essentially does not cluster, and a high clustering coefficient means the opposite. The purity measure is the most interesting for the reader to consider while exploring the graphs. The purity score is a measurement of how many philosophers in the given subgraph has a core-area, determined by our previously mentioned algorithm, equivalent to the subgraph branch. Furthermore, we have included the statistic Bias, which is a very loaded term. It is basically a measurement of how the size of the different branches of philosophy as changed under the assumption that they should remain unchanged in their respective proportions when classifying new philosophers. Naturally, this is harsh assumption, and perhaps in reality we would not expect the branches of philosophy to grow in accordance with their original proportionality on Wikipedia. It does however still tell us how the respective branch-proportionalities have changed after implementing our core-area algorithm. Lastly, we show the relative size and viewcount per branch of philosophyu. Both of which are self-explanatory. 
+We will provide some brief statistics for the reader to consider while exploring the graphs. Since we have not introduced clustering, the reader can think of this as the tendency for nodes in the graph to cluster together, a low clustering coefficient means that the network essentially does not cluster, and a high clustering coefficient means the opposite. The purity measure is the most interesting for the reader to consider while exploring the graphs. The purity score is a measurement of how many philosophers in the given subgraph has a core-area, determined by our previously mentioned algorithm, equivalent to the subgraph branch. Furthermore, we have included the statistic Bias, which is a very loaded term. It is basically a measurement of how the size of the different branches of philosophy has changed under the assumption that they should remain unchanged in their respective proportions when classifying new philosophers. Naturally, this is harsh assumption, and perhaps in reality we would not expect the branches of philosophy to grow in accordance with their original proportionality on Wikipedia. It does however still tell us how the respective branch-proportionalities have changed after implementing our core-area algorithm. Lastly, we show the relative size and view count per branch of philosophy. Both of which are self-explanatory.
 
 <table>
 <thead>
@@ -369,7 +369,7 @@ We will provide some brief statistics for the reader to consider while exploring
 </tbody>
 </table>
 
-The following will not be much more than a picture book for the curious reader to explore. As the reader will notice, some core philosophers will change based on the subgraph examined, and some philosophers will appear in many graphs. We encourage the reader to spend some time exploring on their own. 
+The following will not be much more than a picture book for the curious reader to explore. As the reader will notice, some of the most central philosophers will change based on the subgraph examined, and some philosophers will appear in many graphs. We encourage the reader to spend some time exploring on their own. To be redirected to the desired subgraph, click any of the buttons below. 
 
 <div style="margin: 0 auto; text-align: center;">
         <button onclick="location.href = 'network/sociopoliticals/index.html';" class="button" style="min-width: 200px; height: 200px; background-color: #F6D04D">
@@ -392,11 +392,9 @@ The following will not be much more than a picture book for the curious reader t
         </button>
 </div>
 
-#### Some advanced investigations and discussions
-Small world property, Clustering, Betweenness, Assortiveness etc.
-#### Branch
-#### TF-IDF for communities
-#### 
+#### A fun temporal gimmick
+The stuff below is more of a gimmick than anything serious. What has essentially been done, is to remove links that point from younger philosophers to older philosophers. In as much, we create a graph which can be utilized to see which other philosophers could potentially have inspired a specified philosopher. This of course has one main assumption: philosophers cannot inspire other philosophers that older than themselves (both dead or alive!). 
+
 
 <!--<iframe width="100%" height="764" frameborder="0"
   src="https://observablehq.com/embed/@andersgmadsen/untitled/2?cells=chart"></iframe>-->
