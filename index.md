@@ -42,15 +42,14 @@ As seen, the average in- and out-degree are the same (what goes around must come
 
 #### Top 5 in/out degree
 But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
-<p style="text-align:center;">
 <table class="tg">
-<thead>
+<thead class="tg">
   <tr>
     <th class="tg-rz17" colspan="2"><span style="font-weight:bold">Top 10 philosophers (in-degree)</span></th>
     <th class="tg-rz17" colspan="2"><span style="font-weight:bold">Top 10 philosophers (out-degree)</span></th>
   </tr>
 </thead>
-<tbody>
+<tbody class="tg">
   <tr>
     <td class="tg-nnys">Aristotle</td>
     <td class="tg-nnys">535</td>
@@ -113,7 +112,6 @@ But who are the top 10 philosophers in terms of in/out-degree? The table below s
   </tr>
 </tbody>
 </table>
-</p>
 
 As seen, almost all of the Philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other Philosophers point to the Philosopher in question and out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to in many other Philosopher Wikipedia pages, or link to other Philosophers Wikipedia pages. 
 
