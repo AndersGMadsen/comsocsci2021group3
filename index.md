@@ -436,7 +436,368 @@ For each branch of philosophy, we create a subgraph by utilizing both the core a
   </tr>
 </tbody>
 </table>
+##### Logicians 
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Top 20 Logicians (betweenness centrality)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Aristotle</td>
+    <td>0.07</td>
+  </tr>
+  <tr>
+    <td>Plato</td>
+    <td>0.066</td>
+  </tr>
+  <tr>
+    <td>Bertrand Russell</td>
+    <td>0.06</td>
+  </tr>
+  <tr>
+    <td>Immanuel Kant</td>
+    <td>0.054</td>
+  </tr>
+  <tr>
+    <td>Charles Sanders Peirce</td>
+    <td>0.041</td>
+  </tr>
+  <tr>
+    <td>Kurt Gödel</td>
+    <td>0.034</td>
+  </tr>
+  <tr>
+    <td>Averroes</td>
+    <td>0.029</td>
+  </tr>
+  <tr>
+    <td>Augustine of Hippo</td>
+    <td>0.026</td>
+  </tr>
+  <tr>
+    <td>David Hume</td>
+    <td>0.025</td>
+  </tr>
+  <tr>
+    <td>Georg Wilhelm Friedrich Hegel</td>
+    <td>0.022</td>
+  </tr>
+  <tr>
+    <td>Saul Kripke</td>
+    <td>0.022</td>
+  </tr>
+  <tr>
+    <td>René Descartes</td>
+    <td>0.021</td>
+  </tr>
+  <tr>
+    <td>Ludwig Wittgenstein</td>
+    <td>0.021</td>
+  </tr>
+  <tr>
+    <td>John Stuart Mill</td>
+    <td>0.019</td>
+  </tr>
+  <tr>
+    <td>Gottlob Frege</td>
+    <td>0.019</td>
+  </tr>
+  <tr>
+    <td>Thomas Aquinas</td>
+    <td>0.018</td>
+  </tr>
+  <tr>
+    <td>Karl Popper</td>
+    <td>0.018</td>
+  </tr>
+  <tr>
+    <td>Alfred Tarski</td>
+    <td>0.017</td>
+  </tr>
+  <tr>
+    <td>Edmund Husserl</td>
+    <td>0.016</td>
+  </tr>
+  <tr>
+    <td>Avicenna</td>
+    <td>0.016</td>
+  </tr>
+</tbody>
+</table>
 
+##### Epistemologists 
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Top 20 Epistemologists (betweenness centrality)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Immanuel Kant</td>
+    <td>0.069</td>
+  </tr>
+  <tr>
+    <td>Plato</td>
+    <td>0.04</td>
+  </tr>
+  <tr>
+    <td>David Hume</td>
+    <td>0.028</td>
+  </tr>
+  <tr>
+    <td>Bertrand Russell</td>
+    <td>0.026</td>
+  </tr>
+  <tr>
+    <td>Georg Wilhelm Friedrich Hegel</td>
+    <td>0.023</td>
+  </tr>
+  <tr>
+    <td>Karl Popper</td>
+    <td>0.023</td>
+  </tr>
+  <tr>
+    <td>Baruch Spinoza</td>
+    <td>0.023</td>
+  </tr>
+  <tr>
+    <td>René Descartes</td>
+    <td>0.02</td>
+  </tr>
+  <tr>
+    <td>Aristotle</td>
+    <td>0.018</td>
+  </tr>
+  <tr>
+    <td>Augustine of Hippo</td>
+    <td>0.017</td>
+  </tr>
+  <tr>
+    <td>Friedrich Nietzsche</td>
+    <td>0.016</td>
+  </tr>
+  <tr>
+    <td>Ludwig Wittgenstein</td>
+    <td>0.016</td>
+  </tr>
+  <tr>
+    <td>Noam Chomsky</td>
+    <td>0.016</td>
+  </tr>
+  <tr>
+    <td>Arthur Schopenhauer</td>
+    <td>0.015</td>
+  </tr>
+  <tr>
+    <td>Confucius</td>
+    <td>0.015</td>
+  </tr>
+  <tr>
+    <td>Søren Kierkegaard</td>
+    <td>0.013</td>
+  </tr>
+  <tr>
+    <td>Zhu Xi</td>
+    <td>0.013</td>
+  </tr>
+  <tr>
+    <td>John Locke</td>
+    <td>0.012</td>
+  </tr>
+  <tr>
+    <td>John Stuart Mill</td>
+    <td>0.012</td>
+  </tr>
+  <tr>
+    <td>Edward N. Zalta</td>
+    <td>0.011</td>
+  </tr>
+</tbody>
+</table>
+
+##### Aestheticians 
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Top 20 Aestheticians (betweenness centrality)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Georg Wilhelm Friedrich Hegel</td>
+    <td>0.074</td>
+  </tr>
+  <tr>
+    <td>Immanuel Kant</td>
+    <td>0.068</td>
+  </tr>
+  <tr>
+    <td>Friedrich Nietzsche</td>
+    <td>0.061</td>
+  </tr>
+  <tr>
+    <td>Plato</td>
+    <td>0.036</td>
+  </tr>
+  <tr>
+    <td>Martin Heidegger</td>
+    <td>0.035</td>
+  </tr>
+  <tr>
+    <td>David Hume</td>
+    <td>0.032</td>
+  </tr>
+  <tr>
+    <td>Bertrand Russell</td>
+    <td>0.03</td>
+  </tr>
+  <tr>
+    <td>Søren Kierkegaard</td>
+    <td>0.027</td>
+  </tr>
+  <tr>
+    <td>Arthur Schopenhauer</td>
+    <td>0.025</td>
+  </tr>
+  <tr>
+    <td>Ralph Waldo Emerson</td>
+    <td>0.023</td>
+  </tr>
+  <tr>
+    <td>Augustine of Hippo</td>
+    <td>0.022</td>
+  </tr>
+  <tr>
+    <td>Aristotle</td>
+    <td>0.02</td>
+  </tr>
+  <tr>
+    <td>Roman Ingarden</td>
+    <td>0.018</td>
+  </tr>
+  <tr>
+    <td>Confucius</td>
+    <td>0.017</td>
+  </tr>
+  <tr>
+    <td>Georg Lukács</td>
+    <td>0.015</td>
+  </tr>
+  <tr>
+    <td>Thomas Reid</td>
+    <td>0.014</td>
+  </tr>
+  <tr>
+    <td>Mencius</td>
+    <td>0.014</td>
+  </tr>
+  <tr>
+    <td>Daniel Dennett</td>
+    <td>0.013</td>
+  </tr>
+  <tr>
+    <td>José Ortega y Gasset</td>
+    <td>0.013</td>
+  </tr>
+  <tr>
+    <td>Friedrich Schleiermacher</td>
+    <td>0.012</td>
+  </tr>
+</tbody>
+</table>
+##### Ethicists
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Top 20 Ethicists (betweenness centrality)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Plato</td>
+    <td>0.06</td>
+  </tr>
+  <tr>
+    <td>Immanuel Kant</td>
+    <td>0.059</td>
+  </tr>
+  <tr>
+    <td>Aristotle</td>
+    <td>0.041</td>
+  </tr>
+  <tr>
+    <td>David Hume</td>
+    <td>0.036</td>
+  </tr>
+  <tr>
+    <td>Bertrand Russell</td>
+    <td>0.031</td>
+  </tr>
+  <tr>
+    <td>Maimonides</td>
+    <td>0.022</td>
+  </tr>
+  <tr>
+    <td>Friedrich Nietzsche</td>
+    <td>0.022</td>
+  </tr>
+  <tr>
+    <td>Georg Wilhelm Friedrich Hegel</td>
+    <td>0.021</td>
+  </tr>
+  <tr>
+    <td>Augustine of Hippo</td>
+    <td>0.021</td>
+  </tr>
+  <tr>
+    <td>Cicero</td>
+    <td>0.02</td>
+  </tr>
+  <tr>
+    <td>John Rawls</td>
+    <td>0.019</td>
+  </tr>
+  <tr>
+    <td>Edmund Husserl</td>
+    <td>0.019</td>
+  </tr>
+  <tr>
+    <td>Socrates</td>
+    <td>0.017</td>
+  </tr>
+  <tr>
+    <td>Søren Kierkegaard</td>
+    <td>0.017</td>
+  </tr>
+  <tr>
+    <td>Jürgen Habermas</td>
+    <td>0.016</td>
+  </tr>
+  <tr>
+    <td>Baruch Spinoza</td>
+    <td>0.014</td>
+  </tr>
+  <tr>
+    <td>John Stuart Mill</td>
+    <td>0.014</td>
+  </tr>
+  <tr>
+    <td>Arthur Schopenhauer</td>
+    <td>0.013</td>
+  </tr>
+  <tr>
+    <td>Jeremy Bentham</td>
+    <td>0.013</td>
+  </tr>
+  <tr>
+    <td>Confucius</td>
+    <td>0.013</td>
+  </tr>
+</tbody>
+</table>
 #### Some advanced investigations and discussions
 Small world property, Clustering, Betweenness, Assortiveness etc.
 #### Branch
