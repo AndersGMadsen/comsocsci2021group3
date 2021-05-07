@@ -7,6 +7,11 @@
   background-size: 100% 100%;
 }*/
 
+.table {
+  margin: 0 auto;
+  display: block;
+}
+
 .main-content {
   max-width: 74rem;
 }
@@ -45,4 +50,9 @@ iframe {
     left: 0;
     width: 640;
     height: 360;
+}
+
+.table {
+  margin: 0 auto;
+  display: block;
 }
