@@ -8,9 +8,10 @@
 }*/
 
 .table {
-  margin: 0 auto;
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .main-content {
   max-width: 74rem;
@@ -25,7 +26,6 @@ iframe {
 
 .video {
     width: 640;
-    height: 360;
 }
 
 @import "{{ site.theme }}";
@@ -43,10 +43,9 @@ iframe {
 
 .video {
     width: 640;
-    height: 360;
 }
 
 .table {
-  margin: 0 auto;
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
