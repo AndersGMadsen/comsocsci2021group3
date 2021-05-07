@@ -257,11 +257,11 @@ As seen by the distributions above, in both cases, the measure assortativity is 
 For each branch of philosophy, we create a subgraph by utilizing both the core area and branches of philosophy, such that we include philosophers which previously did not have any core area, and philosophers which are apart of many branches. Since we now wish to create meaningful subgraphs, if a philosopher is a part of many branches, they will appear in all of the appertaining branch subgraphs. The reader can essentially think of this as updating the branch lists, after classifying the philosophers using the neighbor-technique above, and then creating the subgraphs from the updated branches of philosophy. Thus we have kept the underlying integrity of the original branch lists. To remind the reader, the philosopher Ludwig Wittgenstein is a part of three branches of philosophy, namely metaphysics, logic and epistemology. Therefore he will appear in each those subgraphs. Furthermore, next to each subgraph we will list the top 20 philosophers based on betweenness centrality for each branch of philosophy. The following will not be much more than a picture book for the curious reader to explore. As the reader will notice, some core philosophers will change, and some will appear in many graphs. We encourage the reader to spend some time exploring on their own. 
 ##### Sociopoliticals
 
-<div>
-    <div style='float:left; with:40%'>
-        <img style="width: 70%;" src="assets/img/sociopoliticals.png" alt="Degree distribution (directed)"/>
+<div style='display:inline-block;'>
+    <div style='float:left; width:50%'>
+        <img style="width: 100%;" src="assets/img/sociopoliticals.png" alt="Degree distribution (directed)"/>
     </div>
-    <div style='float:right; with:40%'>
+    <div style='float:right; width:50%'>
         <table>
            <thead>
              <tr>
