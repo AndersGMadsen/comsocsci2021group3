@@ -147,7 +147,7 @@ For our philosopher network, the centrality betweenness becomes slightly more ab
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-rz17" colspan="2"><span style="font-weight:bold">Top 10 philosophers (betweenness centrality</span></th>
+    <th class="tg-rz17" colspan="2"><span style="font-weight:bold">Top 10 philosophers (betweenness centrality)</span></th>
   </tr>
 </thead>
 <tbody>
