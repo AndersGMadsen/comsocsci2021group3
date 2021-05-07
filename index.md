@@ -29,7 +29,7 @@ More precisely, a directed link between a philosopher (A) and a philosopher (B) 
 #### Nodes, links and density
 Following the above algorithm for links, the Philosophy Network has a total of ??? nodes and ??? links. As seen, we have less nodes than observations because some Philosophers do not point towards others and are not pointed towards. For any graph we can describe appertaining density as the number of actual links over the number possible links. For a directed graph we have the following equation:
 
-\\[Density = \frac{|E|}{|E|(|E|-1)} = ???\\]
+\\[Density = \frac{|E|}{|E|(|E|-1)} = ??? \\]
 
 where |E| denotes the number of links. As seen, the network is very sparse (since the density is closer to 0 than 1) and this is what we expect from real world networks. 
 #### Degree (plots log-trans: mean median min max)
@@ -142,7 +142,7 @@ While there are many ways to calculate the TF, we have chosen to simply use the 
 
 \\[\operatorname{idf}(t, D)=\log \frac{N}{d \in D: t \in d}\\]
 
-where \\(N=|D|\\) i.e. the number of documents in the corpus, and \\(|\{d \in D: t \in d\}|\\) is the number of documents in the corpus in which _t_ appears. To get a full overview of the most frequent terms or highest TF-IDF score for each philosopher and core-area, we refer to the notebook. Based on the TF and TF-IDF measures, we have constructed several WordCloud's which for now will be our center of attention. 
+To get a full overview of the most frequent terms or highest TF-IDF score for each philosopher and core-area, we refer to the notebook. Based on the TF and TF-IDF measures, we have constructed several WordCloud's which for now will be our center of attention. 
 
 <img style="width: 100%;" src="assets/img/kirkegaard_together.png" alt="Kirkegaard_wordclouds"/>
 
