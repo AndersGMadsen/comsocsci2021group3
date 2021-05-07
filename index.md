@@ -3,7 +3,7 @@
 # Pitch
 <iframe width="960" height="540" src="https://www.youtube.com/embed/nr-eFXzQNGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Easy 12!
+# Easy 12
 <iframe id="serviceFrameSend" width="100%" height="684" frameborder="0" display:block margin: 0 auto src="test/index.html"></iframe>
 
 ### Why Philosophy?
