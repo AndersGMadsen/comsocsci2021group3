@@ -83,7 +83,7 @@ function vis(new_controls) {
   //controls['file_path'] = "https://gist.githubusercontent.com/ulfaslak/6be66de1ac3288d5c1d9452570cbba5a/raw/0b9595c09b9f70a77ee05ca16d5a8b42a9130c9e/miserables.json";
 
   // Force layout
-  var simulation = d3.forceSimulation() 
+  var simulation = d3.forceSimulation()
     .force("link", d3.forceLink()
       .id(d => d.id)
       .distance(controls['link_distance'])
@@ -113,7 +113,7 @@ function vis(new_controls) {
     graph.nodes.forEach(drawNode);
     graph.nodes.forEach(drawText);
 
-    context.font = "18px Helvetica";
+    context.font = "20px Helvetica";
     context.fillStyle = "#000000";
     context.fillText("Epistemologists", width*0.78, height*0.04);
     context.beginPath();
@@ -121,7 +121,6 @@ function vis(new_controls) {
     context.fillStyle = '#FC7634';
     context.fill();
 
-    context.font = "18px Helvetica";
     context.fillStyle = "#000000";
     context.fillText("Metaphysicians", width*0.78, height*0.08);
     context.beginPath();
@@ -129,7 +128,6 @@ function vis(new_controls) {
     context.fillStyle = "#1FD082";
     context.fill();
 
-    context.font = "18px Helvetica";
     context.fillStyle = "#000000";
     context.fillText("Logicians", width*0.78, height*0.12);
     context.beginPath();
@@ -137,7 +135,6 @@ function vis(new_controls) {
     context.fillStyle = '#030F4F';
     context.fill();
 
-    context.font = "18px Helvetica";
     context.fillStyle = "#000000";
     context.fillText("Sociopoliticals", width*0.78, height*0.16);
     context.beginPath();
@@ -145,7 +142,6 @@ function vis(new_controls) {
     context.fillStyle = '#F6D04D';
     context.fill();
 
-    context.font = "18px Helvetica";
     context.fillStyle = "#000000";
     context.fillText("Ethicists", width*0.78, height*0.20);
     context.beginPath();
@@ -153,13 +149,20 @@ function vis(new_controls) {
     context.fillStyle = '#2F3EEA';
     context.fill();
 
-    context.font = "18px Helvetica";
     context.fillStyle = "#000000";
     context.fillText("Aestheticians", width*0.78, height*0.24);
     context.beginPath();
     context.arc(width*0.76, height*0.23, 9, 0, Math.PI*2, false);
     context.fillStyle = '#E83F48';
     context.fill();
+
+    context.font = "20px Helvetica";
+    context.fillStyle = "#000000";
+    context.fillText("Size: 998", width*0.01, height*0.98);
+    context.fillText("Density: 0.032", width*0.17, height*0.98);
+    context.fillText("Clustering: 0.488", width*0.38, height*0.98);
+    context.fillText("Purity: 0.873", width*0.62, height*0.98);
+    context.fillText("Bias: 1.465", width*0.81, height*0.98);
   }
 
   // Restart simulation
