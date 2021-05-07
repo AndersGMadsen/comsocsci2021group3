@@ -324,7 +324,7 @@ We will provide some brief statistics for the reader to consider while exploring
 
 The following will not be much more than a picture book for the curious reader to explore. As the reader will notice, some core philosophers will change based on the subgraph examined, and some philosophers will appear in many graphs. We encourage the reader to spend some time exploring on their own. 
 
-<div style="display: table-row; margin: 0 auto; text-align: center;">
+<div style="margin: 0 auto; text-align: center;">
         <button onclick="location.href = 'network/sociopoliticals/index.html';" class="button" style="min-width: 200px; height: 200px; background-color: #F6D04D">
         	<span>Sociopoliticals</span>
         </button>
