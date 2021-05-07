@@ -1,7 +1,7 @@
 # comsocsci2021group3
 
 # Easy 12!
-<iframe align=middle id="serviceFrameSend" width="100%" height="800" frameborder="0" src="network/complete/index.html"></iframe>
+<!--<iframe align=middle id="serviceFrameSend" width="100%" height="800" frameborder="0" src="network/complete/index.html"></iframe>-->
 
 # Test
 <div style="display: table-row">
