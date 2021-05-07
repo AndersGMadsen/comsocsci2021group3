@@ -286,6 +286,8 @@ We will provide some brief statistics for the reader to consider while exploring
     <th>Clustering</th>
     <th>Purity</th>
     <th>Bias</th>
+    <th>Relative size</th>
+    <th>Relative Views</th>
   </tr>
 </thead>
 <tbody>
@@ -296,6 +298,8 @@ We will provide some brief statistics for the reader to consider while exploring
     <td>0.488</td>
     <td>0.873</td>
     <td>1.465</td>
+    <td>0.607</td>
+    <td>0.700</td>
   </tr>
   <tr>
     <td>metaphysicians</td>
@@ -304,6 +308,8 @@ We will provide some brief statistics for the reader to consider while exploring
     <td>0.588</td>
     <td>0.263</td>
     <td>1.160</td>
+    <td>0.240</td>
+    <td>0.323</td>
   </tr>
   <tr>
     <td>logicians</td>
@@ -312,6 +318,8 @@ We will provide some brief statistics for the reader to consider while exploring
     <td>0.546</td>
     <td>0.401</td>
     <td>0.555</td>
+    <td>0.153</td>
+    <td>0.215</td>
   </tr>
   <tr>
     <td>epistemologists</td>
@@ -320,6 +328,8 @@ We will provide some brief statistics for the reader to consider while exploring
     <td>0.635</td>
     <td>0.744</td>
     <td>1.353</td>
+    <td>0.190</td>
+    <td>0.290</td>
   </tr>
   <tr>
     <td>aestheticians</td>
@@ -328,6 +338,8 @@ We will provide some brief statistics for the reader to consider while exploring
     <td>0.610</td>
     <td>0.929</td>
     <td>0.896</td>
+    <td>0.103</td>
+    <td>0.169</td>
   </tr>
   <tr>
     <td>ethicists</td>
@@ -336,6 +348,8 @@ We will provide some brief statistics for the reader to consider while exploring
     <td>0.594</td>
     <td>0.497</td>
     <td>0.574</td>
+    <td>0.190</td>
+    <td>0.378</td>
   </tr>
 </tbody>
 </table>
