@@ -36,7 +36,7 @@ where |E| denotes the number of links. As seen, the network is very sparse (sinc
 #### Degree (plots log-trans: mean median min max)
 Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network we will have a in, and an out-degree for each Philosopher. Naturally, the sum of the in and out-degrees must be identical since _what goes around comes around_.
 
-<img src="assets/img/Directed_phil_dist_dir.png" alt="Degree distribution (directed)"/>
+<img style="width: 80%src="assets/img/Directed_phil_dist_dir.png" alt="Degree distribution (directed)"/>
 
 As seen, the average in- and out-degree are the same (what goes around must come around). Since we have log-log transformed the x- and y-axis in the plot, it is apparent that the degree distribution is not normally distributed, but instead is very heavy tailed - meaning that we have some very high degree nodes relative to the averages. In layman terms, this simply means that some philosophers have alot of in and out-going links. This is also seen from the medians that lay to the left of the mean. 
 
