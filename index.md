@@ -24,11 +24,8 @@ More precisely, a directed link between a philosopher (A) and a philosopher (B) 
 
 
 #### Nodes, links and density
-Following the above algorithm for links, the Philosophy Network has a total of 1645 nodes and 69109 links. As seen, we have less nodes than observations because some Philosophers do not point towards others and are not pointed towards. For any graph we can describe appertaining density as the number of actual links over the number possible links. For a directed graph we have the following equation:
+Following the above algorithm for links, the Philosophy Network has a total of 1645 nodes and 69109 links. As seen, we have less nodes than observations because some Philosophers do not point towards others and are not pointed towards. For any graph we can describe appertaining density as the number of actual links over the number possible links.
 
-\\[density = \frac{|E|}{|E|(|E|-1)} = 0.026 \\]
-
-where |E| denotes the number of links. As seen, the network is very sparse (since the density is closer to 0 than 1) and this is what we expect from real world networks. 
 #### Degree (plots log-trans: mean median min max)
 Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network, we will have both an in- and an out-degree for each philosopher. Naturally, the sum of the in and out-degrees must be identical since what goes around comes around.
 
