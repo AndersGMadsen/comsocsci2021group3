@@ -22,7 +22,7 @@ As the project developed, more attributes were gathered as they could provide us
 
 ### Initial Graph
 #### To be or not to be.. directed or undirected
-As we wish to get a nice overview of the Philosophy Network, we must consider whether the network should be directed or undirected. The case for making the network directed is that we preserve the integrity of the Wikipedia link structure. Hyperlinks only point one way, and thus a directed graph shows which Philosopher Wikipedia-pages point to others. However, since the number of Philosophers is finite, we also know the incoming links to each Philosopher. On the other hand, the undirected version of the Philosophy Network gives a more general overview of the Wikipedia link structure and makes community detection much easier. For this project we will primarily make use of the directed Philosophy Network except when dealing with community detection. The reason for this is that many of our investigations be less ambiguous and reveal more wrt. Wikipedia.
+As we wish to get a nice overview of the Philosophy Network, we must consider whether the network should be directed or undirected. The case for making the network directed is that we preserve the integrity of the Wikipedia link structure. Hyperlinks only point one way, and thus a directed graph shows which Philosopher Wikipedia-pages point to others. However, since the number of Philosophers is finite, we also know the incoming links to each Philosopher. On the other hand, the undirected version of the Philosophy Network gives a more general overview of the Wikipedia link structure and makes community detection much easier. For this project we will primarily make use of the directed Philosophy Network except when dealing with community detection (and some other network-tools). The reason for this is that many of our investigations will be less ambiguous and reveal more wrt. Wikipedia.
 
 More precisely, a directed link between a philosopher (A) and a philosopher (B) is created if there is a hyperlink from the Wikipedia page of (A) to the Wikipedia page (B). 
 
@@ -34,11 +34,11 @@ Following the above algorithm for links, the Philosophy Network has a total of ?
 
 where |E| denotes the number of links. As seen, the network is very sparse (since the density is closer to 0 than 1) and this is what we expect from real world networks. 
 #### Degree (plots log-trans: mean median min max)
-Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network we will have a in, and an out-degree for each Philosopher. Naturally, the sum of the in and out-degrees must be identical since _what goes around comes around_.
+Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network we will have both an in- and an out-degree for each Philosopher. Naturally, the sum of the in and out-degrees must be identical since _what goes around comes around_.
 
 <img style="width: 60%;" src="assets/img/Directed_phil_dist_dir.png" alt="Degree distribution (directed)"/>
 
-As seen, the average in- and out-degree are the same (what goes around must come around). Since we have log-log transformed the x- and y-axis in the plot, it is apparent that the degree distribution is not normally distributed, but instead is very heavy tailed - meaning that we have some very high degree nodes relative to the averages. In layman terms, this simply means that some philosophers have alot of in and out-going links. This is also seen from the medians that lay to the left of the mean. 
+As seen, the average in- and out-degree are the same (what goes around must come around). Since we have log-log transformed the x- and y-axis in the plot, it is apparent that the degree distribution is not normally distributed, but instead is very heavy tailed - meaning that we have some very high degree nodes relative to the averages. In layman terms, this simply means that some philosophers have alot of in and out-going links.
 
 #### Top 5 in/out degree
 But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
@@ -113,15 +113,15 @@ But who are the top 10 philosophers in terms of in/out-degree? The table below s
 </tbody>
 </table>
 
-As seen, almost all of the Philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other Philosophers point to the Philosopher in question and out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to in many other Philosopher Wikipedia pages, or link to other Philosophers Wikipedia pages. 
+As seen, all of the philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other philosophers point to the philosopher in question while out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to from many other philosophers' Wikipedia pages, or link to other philosophers' Wikipedia pages. 
 
 #### Scatterplot (in out correlation)
 Continuing on the last point made above, we now investigate if there a correlation between the in- and out-degree for philosophers.
 
 <img src="assets/img/Scatter_dir_degree.png" alt="Scatterplot for in-out"/>
 
-The above plot shows the respective in- and out-degrees for each Philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a Philosophers in-degree to reveal something about the appertaining out-degree - namely that Philosophers with high in-degree also have high out-degree, and low in-degree Philosophers have low out-degree. 
-#### Whats next?
+The above plot shows the respective in- and out-degrees for each Philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a philosophers' in-degree to reveal something about the appertaining out-degree - namely that philosophers with high in-degree also have high out-degree, and low in-degree philosophers have low out-degree. 
+
 ### Initial text 
 Our main goal with the following text analysis is to utilize NLP tools that we have learned throughout the course to get an deeper insight about the content in the different philosopher body text as well as the larger corpuses based on known core-areas and the interpreted ones based on network connections. Using different methods such as term-frequency (TF), term frequency–inverse document frequency and WordClouds, we want to find out which words describes each philosopher as well as categorized documents and discuss whether the result was expected or not. Furthermore, this could contribute to the investigation of whether our split seems meaningful or not.
 
@@ -143,8 +143,9 @@ LOREM IPSUM
 #### Betweenness centrality 
 Another interesting investigation in the philosophy network is to compute the betweenness centrality of nodes. In this definition of centrality (and there are many definitions!) nodes that occur in many shortest paths are considered central in the graph and thus have high centrality scores.
 
-An intuitive way of thinking about betweenness centrality score is to consider the consumer airline network, specifically flight logistics. Imagine you live in Denmark and you are trying to book a flight from Copenhagen to a tiny island off the coast of Africa. How would your flight route look? You probably would not fly directly to the island since such a route (path) does not exist. On the other hand, your itinerary would probably not involve having you fly to Russia or the USA for a layover either. The most efficient route (i.e., the shortest path) would probably include a layover in a popular airport in Europe, like Amsterdam, and/or a layover in an airport closer to your destination, like Dubai. Big airports enable many possible flight routes, i.e., the shortest paths, and are very central to the aerospace network and thus have high betweenness centrality.
-For our philosopher network, the centrality betweenness becomes slightly more abstract, as links are now not flight routes but rather hyperlinks between Wikipedia pages. It does however still indicate the most central philosophers in the graph. The table below shows the most central philosophers in the directed philosophy network.
+An intuitive way of thinking about betweenness centrality score is to consider the consumer airline network, specifically flight logistics. Imagine you live in Denmark and you are trying to book a flight from Copenhagen to a tiny island off the coast of Africa. How would your flight route look? You probably would not fly directly to the island since such a route (path) does not exist. On the other hand, your itinerary would probably not involve having you fly to Russia or the USA for a layover either. The most efficient route (i.e., the shortest path) would probably include a layover in a popular airport in Europe, like Amsterdam, and/or a layover in an airport closer to your destination, like Dubai. Big airports enable many possible flight routes, i.e., the shortest paths, and are very central to the consumer airline network and thus have high betweenness centrality.
+
+For our philosopher network, the centrality betweenness becomes slightly more abstract, as links are now not flight routes but rather hyperlinks between Wikipedia pages. It does however still indicate the most central philosophers in the graph. The table below shows the most central philosophers in the directed philosophy network based on betweenness centrality.
 
 <table class="tg">
 <thead>
@@ -196,10 +197,11 @@ For our philosopher network, the centrality betweenness becomes slightly more ab
 </tbody>
 </table>
 
-COMMENT
+As seen, many of the above philosophers are the same as you would find in any introductory courses in philosophy. A reader well-versed in philosophy can only agree that the philosophers above are perhaps the biggest key figures in western philosophy. Nevertheless, we will consider the betweenness centrality score a valuable metric (and perhaps the best metric) for determining a philosopher's importance in the subgraphs explored later.
 
 #### Communities
-In Philosophy, there are many subareas of interest, and often Philosophers will dip their toes into many different core areas. Think of seminal figures such as Immanuel Kant or Aristotle who both explored and influenced almost all branches of philosophy – what is their respective core area? For us, we may be temped to say that Immanuel Kant was an ethicist first and foremost, and Aristotle was an aesthetic, but we cannot rely on our individual opinions (although they may be correct) when trying to build a proper network via. the Wikipedia data gathered. However, Wikipedia gracefully provides a list of branches and their respective key philosophers. According to Wikipedia, philosophy can be divided into the following branches: 
+In philosophy there are many branches, and often philosophers will dip their toes into many different core areas. Think of seminal figures such as Immanuel Kant or Aristotle who both explored and influenced almost all branches of philosophy – what is their respective core area? 
+One may be temped to say that Immanuel Kant was an ethicist first and foremost, and that Aristotle is impossible to categorize. But we cannot rely on our individual opinions (although they may be correct) when trying to build a proper network via. the Wikipedia data gathered. However, Wikipedia gracefully provides a list of branches and their respective key philosophers. According to Wikipedia, philosophy can be divided into the following branches: 
 -	Aestheticians
 -	Epistemologists
 -	Ethicists
@@ -207,16 +209,16 @@ In Philosophy, there are many subareas of interest, and often Philosophers will 
 -	Metaphysicians
 -	Social and political philosophers
 
-It would be nice if these sets were already disjoint – meaning that a philosopher could only be in one of the branch lists. However, in accordance with the points made before, many of the philosophers appear in multiple branches, and only a select few can be directly assigned a core area based on the provided branch lists. We provide the non-technical reader with the following Venn-diagram to understand the dilemma (using Jeremy Bentham as an example): 
+It would be nice if these sets were already disjoint – meaning that a philosopher could only appear in one of the branch lists. However, in accordance with the points made before, many of the philosophers appear in multiple branches, and only a select few can be directly assigned a core-area based on the provided branch lists. We provide the non-technical reader with the following Venn-diagram to understand the dilemma (using the eclectic Ludwig Wittgenstein as an example): 
 
 <img src="assets/img/Venn1.png" alt="Degree distribution (directed)"/>
 
-As seen, Ludwig Wittgenstein is a member of three philosophical branches according to Wikipedia, and given the ambiguity how should do we choose which branch is his main core area in a meaningful way? Furthermore, some philosophers do not appear in any of the branch lists, and how do we appropriately determine their philosophical core area? Unfortunately, there is no perfect way of doing this, but one way is to utilize the network structure to create meaningful classifications of philosophical core areas for those philosophers who do not appear in any branch list, and for those that appear in many and are therefore ambiguous to classify. The process is as follows: 
+As seen, Ludwig Wittgenstein is a member of three philosophical branches according to Wikipedia, and given this ambiguity how should do one choose which branch of philosophy is his main core-area in a meaningful way? Furthermore, some philosophers do not appear in any of the branch lists, and how do we appropriately determine their philosophical core-area? Unfortunately, there is no perfect way of doing this, but one way is to utilize the network structure to create meaningful classifications of philosophical core-areas for those philosophers who do not appear in any branch list, and for those that appear in many and are therefore ambiguous to classify. The process is as follows: 
 -	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
 -	Next, for each ambiguous philosopher (those who appear in more than one branch of philosophy), iterate over the branches of philosophy the philosopher is apart of. Then count the number of neighbors in each of those branches, and finally assign the core area as being the branch with the most neighbors. 
 -	Finally, for all philosophers that do not appear in any branch of philosophy, iterate through neighbors and assign the core area based on a majority vote.  
 
-By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method described above later. For now, we will continue the investigation by examining the fitness of the core-area partition. The final partition for the graph by core area can be seen below. 
+By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method above later. For now, we will continue the investigation by examining the fitness of the core-area partition.
 
 #### Modularity
 
