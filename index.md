@@ -144,11 +144,13 @@ where $N=|D|$ i.e. the number of documents in the corpus, and $|\{d \in D: t \in
 
 Above you find two WordClouds of a great danish philospher, Søren Kierkegaard. Can you guess which WordCloud (WC) is using the term frequency and which is using TF-IDF? **Answer:** On the left we find the TF based WC and on the right we have the TF-IDF based WC. Both plots are actually very informative, however when taking a closer look at them, we find quite a lot differences. First, when looking at the right WC compared to the left, we find some words which seems to apply because we are looking into a danish philosopher such as *danish*, and danish names like (*møller*). We also find other danish words like *opbyggelige* which in english means *upbuilding* which is also one of the higher rated words. Now, this example is actually quite interesting as other words such as *discourses* and *edifyingis highly weighted on the right WC, which of course is due to the *Eighteen Upbuilding Discourses*, which is particularly one of **Kierkegaards** more known works. We also find other words such as *unscientific* and *forgiveness* which describes some of Kierkegaards work quite well. While these observations can seem subjective, looking at this example indicates that there is a noticeable difference between using TF and TF-IDF, and that each method has it's pros and cons when looking at each philosopher. These findings are further supported by looking into some of the highest rated words for more philosophers, where many philosopher shares the same top words when using TF, while being more distinct when using TF-IDF.
 
-**TF**
+**The six core-are WordClouds using TF**
 <img style="width: 100%;" src="aassets/img/WordCloud_tf.png" alt="TF"/>
 
-**TF-IDF**
+**The six core-are WordClouds using TF-IDF**
 <img style="width: 100%;" src="assets/img/WordCloud_tfidf.png" alt="TF-IDF"/>
+Looking at the top TF-IDF WordClouds for the six core-areas, we find that they are very hard to understand, as some of them aren't even in english, and that they are quite special in the sense that they are very unknown to the authors of this website. The reasons why this is, could be that the corpus' are so large and has so much in common that many of the words easily overlaps. We hoped that this could have been avoided as there are no overlap of philosophers between the documents. Another reason could be that we downweight words which occurs in more than one document too much, and therefore only see quite rare words. To avoid this, we tried experimenting with the weighting of the words in the TF-IDF calculations, however without getting any significant better results. Unfortunately, it seems like we are better off looking at the most frequent words, although those WordClouds are quite similar.![image](https://user-images.githubusercontent.com/57094931/117505741-d6d8ac00-af84-11eb-9052-ca993dd67250.png)
+
 
 LOREM IPSUM
 #### Sentiment Analisys
