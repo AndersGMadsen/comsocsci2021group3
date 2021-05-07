@@ -257,100 +257,100 @@ As seen by the distributions above, in both cases, the measure assortativity is 
 For each branch of philosophy, we create a subgraph by utilizing both the core area and branches of philosophy, such that we include philosophers which previously did not have any core area, and philosophers which are apart of many branches. Since we now wish to create meaningful subgraphs, if a philosopher is a part of many branches, they will appear in all of the appertaining branch subgraphs. The reader can essentially think of this as updating the branch lists, after classifying the philosophers using the neighbor-technique above, and then creating the subgraphs from the updated branches of philosophy. Thus we have kept the underlying integrity of the original branch lists. To remind the reader, the philosopher Ludwig Wittgenstein is a part of three branches of philosophy, namely metaphysics, logic and epistemology. Therefore he will appear in each those subgraphs. Furthermore, next to each subgraph we will list the top 20 philosophers based on betweenness centrality for each branch of philosophy. The following will not be much more than a picture book for the curious reader to explore. As the reader will notice, some core philosophers will change, and some will appear in many graphs. We encourage the reader to spend some time exploring on their own. 
 ##### Sociopoliticals
 
-<div id="header" style="height:15%;width:100%;">
+<div>
     <div style='float:left'>
-        <img style="width: 60%;" src="assets/img/sociopoliticals.png" alt="Degree distribution (directed)"/>
+        <img style="width: 10%;" src="assets/img/sociopoliticals.png" alt="Degree distribution (directed)"/>
     </div>
-    <div style='float:leftt'>
+    <div style='float:right'>
         <table>
-<thead>
-  <tr>
-    <th colspan="2">Top 10 Sociopolitical philosophers (betweenness centrality)</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Aristotle</td>
-    <td>0.051</td>
-  </tr>
-  <tr>
-    <td>Plato</td>
-    <td>0.036</td>
-  </tr>
-  <tr>
-    <td>Immanuel Kant</td>
-    <td>0.029</td>
-  </tr>
-  <tr>
-    <td>Maimonides</td>
-    <td>0.027</td>
-  </tr>
-  <tr>
-    <td>Karl Marx</td>
-    <td>0.024</td>
-  </tr>
-  <tr>
-    <td>Georg Wilhelm Friedrich Hegel</td>
-    <td>0.024</td>
-  </tr>
-  <tr>
-    <td>Friedrich Nietzsche</td>
-    <td>0.023</td>
-  </tr>
-  <tr>
-    <td>Baruch Spinoza</td>
-    <td>0.023</td>
-  </tr>
-  <tr>
-    <td>Augustine of Hippo</td>
-    <td>0.02</td>
-  </tr>
-  <tr>
-    <td>Thomas Aquinas</td>
-    <td>0.018</td>
-  </tr>
-  <tr>
-    <td>B. R. Ambedkar</td>
-    <td>0.016</td>
-  </tr>
-  <tr>
-    <td>Zhiyi</td>
-    <td>0.015</td>
-  </tr>
-  <tr>
-    <td>Buddhaghosa</td>
-    <td>0.015</td>
-  </tr>
-  <tr>
-    <td>Voltaire</td>
-    <td>0.013</td>
-  </tr>
-  <tr>
-    <td>John Locke</td>
-    <td>0.013</td>
-  </tr>
-  <tr>
-    <td>Bertrand Russell</td>
-    <td>0.013</td>
-  </tr>
-  <tr>
-    <td>William James</td>
-    <td>0.013</td>
-  </tr>
-  <tr>
-    <td>John Stuart Mill</td>
-    <td>0.013</td>
-  </tr>
-  <tr>
-    <td>David Hume</td>
-    <td>0.012</td>
-  </tr>
-  <tr>
-    <td>Averroes</td>
-    <td>0.012</td>
-  </tr>
-</tbody>
-</table>
+           <thead>
+             <tr>
+               <th colspan="2">Top 10 Sociopolitical philosophers (betweenness centrality)</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>Aristotle</td>
+               <td>0.051</td>
+             </tr>
+             <tr>
+               <td>Plato</td>
+               <td>0.036</td>
+             </tr>
+             <tr>
+               <td>Immanuel Kant</td>
+               <td>0.029</td>
+             </tr>
+             <tr>
+               <td>Maimonides</td>
+               <td>0.027</td>
+             </tr>
+             <tr>
+               <td>Karl Marx</td>
+               <td>0.024</td>
+             </tr>
+             <tr>
+               <td>Georg Wilhelm Friedrich Hegel</td>
+               <td>0.024</td>
+             </tr>
+             <tr>
+               <td>Friedrich Nietzsche</td>
+               <td>0.023</td>
+             </tr>
+             <tr>
+               <td>Baruch Spinoza</td>
+               <td>0.023</td>
+             </tr>
+             <tr>
+               <td>Augustine of Hippo</td>
+               <td>0.02</td>
+             </tr>
+             <tr>
+               <td>Thomas Aquinas</td>
+               <td>0.018</td>
+             </tr>
+             <tr>
+               <td>B. R. Ambedkar</td>
+               <td>0.016</td>
+             </tr>
+             <tr>
+               <td>Zhiyi</td>
+               <td>0.015</td>
+             </tr>
+             <tr>
+               <td>Buddhaghosa</td>
+               <td>0.015</td>
+             </tr>
+             <tr>
+               <td>Voltaire</td>
+               <td>0.013</td>
+             </tr>
+             <tr>
+               <td>John Locke</td>
+               <td>0.013</td>
+             </tr>
+             <tr>
+               <td>Bertrand Russell</td>
+               <td>0.013</td>
+             </tr>
+             <tr>
+               <td>William James</td>
+               <td>0.013</td>
+             </tr>
+             <tr>
+               <td>John Stuart Mill</td>
+               <td>0.013</td>
+             </tr>
+             <tr>
+               <td>David Hume</td>
+               <td>0.012</td>
+             </tr>
+             <tr>
+               <td>Averroes</td>
+               <td>0.012</td>
+             </tr>
+           </tbody>
+           </table>
     </div>
 </div>
 
