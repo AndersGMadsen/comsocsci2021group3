@@ -260,6 +260,69 @@ To remind the reader, the philosopher Ludwig Wittgenstein is a part of three bra
 
 We will provide some brief statistics for the reader to consider while exploring the graphs. Since we have not introduced clustering, the reader can think of this as the tendency for nodes in the graph to cluster together, a low clustering coefficient means that the network essentially does not cluster, and a high clustering coefficient means the opposite. The purity measure is the most interesting for the reader to consider while exploring the graphs. The purity score is a measurement of how many philosophers in the given subgraph has a core-area, determined by our previously mentioned algorithm, equivalent to the subgraph branch. Finally, we have included the statistic Bias, which is a very loaded term. It is basically a measurement of how the size of the different branches of philosophy as changed under the assumption that they should remain unchanged in their respective proportions when classifying new philosophers. Naturally, this is harsh assumption, and perhaps in reality we would not expect the branches of philosophy to grow in accordance with their original proportionality on Wikipedia. It does however still tell us how the respective branch-proportionalities have changed after implementing our core-area algorithm. 
 
+<table>
+<thead>
+  <tr>
+    <th>Branches</th>
+    <th>Size</th>
+    <th>Density</th>
+    <th>Clustering</th>
+    <th>Purity</th>
+    <th>Bias</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>sociopoliticals</td>
+    <td>998</td>
+    <td>0.032</td>
+    <td>0.488</td>
+    <td>0.873</td>
+    <td>1.465</td>
+  </tr>
+  <tr>
+    <td>metaphysicians</td>
+    <td>395</td>
+    <td>0.105</td>
+    <td>0.588</td>
+    <td>0.263</td>
+    <td>1.160</td>
+  </tr>
+  <tr>
+    <td>logicians</td>
+    <td>252</td>
+    <td>0.097</td>
+    <td>0.546</td>
+    <td>0.401</td>
+    <td>0.555</td>
+  </tr>
+  <tr>
+    <td>epistemologists</td>
+    <td>313</td>
+    <td>0.153</td>
+    <td>0.635</td>
+    <td>0.744</td>
+    <td>1.353</td>
+  </tr>
+  <tr>
+    <td>aestheticians</td>
+    <td>169</td>
+    <td>0.141</td>
+    <td>0.610</td>
+    <td>0.929</td>
+    <td>0.896</td>
+  </tr>
+  <tr>
+    <td>ethicists</td>
+    <td>312</td>
+    <td>0.112</td>
+    <td>0.594</td>
+    <td>0.497</td>
+    <td>0.574</td>
+  </tr>
+</tbody>
+</table>
+
 ##### Sociopoliticals
 
 <div style='display:inline-block;'>
