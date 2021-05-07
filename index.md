@@ -154,7 +154,7 @@ As we are working with text which aims to inform the reader in an objective way,
 
 First and foremost we plot the density of the average happiness score for each philoshopher page.
 
-<img style="width: 80%;" src="assets/img/happiness_score.png" alt="Sentiment analysis"/>
+<img style="width: 80%;" src="assets/img/hapiness_score.png" alt="Sentiment analysis"/>
 
 
 Comparing the density plot above with the Hedonometer (which describes the happiness scores of twitter from 2009-present, https://hedonometer.org/timeseries/en_all/?from=2008-09-09&to=2021-05-06) we eyeball that the mean average happiness score of the philosophers' Wikipedia page (approx. 5.52) is generally lower that the average happiness score on Twitter (approx. 6). This makes sense since Wikipedia is an online encyclopedia, which uses a more objective (and thus neutral) language. Twitter on the other hand, is a hub for subjectivity and social out
