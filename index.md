@@ -237,7 +237,7 @@ One may be temped to say that Immanuel Kant was an ethicist first and foremost, 
 
 It would be nice if these branches were already disjoint – meaning that a philosopher could only appear in one of the branch lists. However, in accordance with the points made before, many of the philosophers appear in multiple branches, and only a select few can be directly assigned a core-area based on the provided branch lists. We provide the non-technical reader with the following Venn-diagram to understand the dilemma (using the eclectic Ludwig Wittgenstein as an example): 
 
-<img src="assets/img/Venn2.png" alt="Degree distribution (directed)"/>
+<img style="width: 70%;" src="assets/img/Venn2.png" alt="Degree distribution (directed)"/>
 
 As seen, Ludwig Wittgenstein is a member of three philosophical branches according to Wikipedia, and given this ambiguity how should do one choose which branch of philosophy is his main core-area in a meaningful way? Furthermore, some philosophers do not appear in any of the branch lists, and how do we appropriately determine their philosophical core-area? Unfortunately, there is no perfect way of doing this, but one way is to utilize the network structure to create meaningful classifications of philosophical core-areas for those philosophers who do not appear in any branch list, and for those that appear in many and are therefore ambiguous to classify. The process is as follows: 
 -	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
