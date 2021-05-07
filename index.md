@@ -1,5 +1,8 @@
 # comsocsci2021group3
 
+# Pitch
+<iframe width="1730" height="695" src="https://www.youtube.com/embed/nr-eFXzQNGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Easy 12!
 <iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="test/index.html"></iframe>
 
@@ -249,12 +252,11 @@ For the degree of nodes we get a assortativity score of ???, while we get a slig
 
 As seen by the distributions above, in both cases, the measure assortativity is significantly different from what we would expect to measure had the philosophy network been randomly linked based on the core-area partitioning. This means that even though the assortativity is low, it is non-neglitable. Therefore we can conclude two things, namely than (1) in both cases the assortativity is significatn, and (2) philosophers tend to link to other philosophers of the same core-area much more than they tend to link to other philosophers with the same degree. 
 
-#### deeper
+#### Branches of philosophy and centrality
 
+For each branch of philosophy, we create a subgraph by utilizing both the core area and branches of philosophy, such that we include philosophers which previously did not have any core area, and philosophers which are apart of many branches. Since we now wish to create meaningful subgraphs, if a philosopher is a part of many branches, they will appear in all of the appertaining branch subgraphs. The reader can essentially think of this as updating the branch lists, after classifying the philosophers using the neighbor-technique above, and then creating the subgraphs from the updated branches of philosophy. Thus we have kept the underlying integrity of the original branch lists. To remind the reader, the philosopher Ludwig Wittgenstein is a part of three branches of philosophy, namely metaphysics, logic and epistemology. Therefore he will appear in each those subgraphs. Furthermore, next to each subgraph we will list the top 20 philosophers based on betweenness centrality for each branch of philosophy. The following will not be much more than a picture book for the curious reader to explore. As the reader will notice, some core philosophers will change, and some will appear in many graphs. We encourage the reader to spend some time exploring on their own. 
+##### Epistemology
 
-By now, the reader might have objections to the approach, and we shall discuss both the assumptions and the limitation of the method described above later. However, for now, we will continue by creating the subgraphs for each branch of philosophy. 
-
-For each branch of philosophy, we create a subgraph by utilizing both the core area and branches of philosophy, such that we include philosophers which previously did not have any core area, and philosophers which are apart of many branches. Since we now wish to create meaningful subgraphs , if a philosopher is a part of many branches, they will appear in all of the appertaining branch subgraphs. The reader can essentially think of this as updating the branch lists, after classifying the philosophers using the neighbor-technique above, and then creating the subgraphs from the updated branches of philosophy. Thus we have kept the underlying integrity of the original branch lists
 
 
 #### Some advanced investigations and discussions
@@ -266,7 +268,5 @@ Small world property, Clustering, Betweenness, Assortiveness etc.
 <iframe width="100%" height="764" frameborder="0"
   src="https://observablehq.com/embed/@andersgmadsen/untitled/2?cells=chart"></iframe>
 
-
-# Pitch
-<iframe width="1730" height="695" src="https://www.youtube.com/embed/nr-eFXzQNGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+### New title
+Anders >>> Jonas
