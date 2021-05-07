@@ -7,7 +7,7 @@
 <iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="plot1.html"></iframe>
 
 # Overraskelse 2
-<iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="plot1.html"></iframe>
+<iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="plot2.html"></iframe>
 
 
 ### Why Philosophy?
