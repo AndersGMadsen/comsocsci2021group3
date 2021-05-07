@@ -34,8 +34,9 @@ Following the above algorithm for links, the Philosophy Network has a total of ?
 
 where |E| denotes the number of links. As seen, the network is very sparse (since the density is closer to 0 than 1) and this is what we expect from real world networks. 
 #### Degree (plots log-trans: mean median min max)
-Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network we will have a in, and an out-degree for each Philosopher. Naturally, the sum of the in and out-degrees must be identical since _what goes around comes around_. 
-<img src="/assets/img/Directed_phil_dist_dir.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
+Now we turn to the distributions of the node degrees in the network. Since we are working with a directed network we will have a in, and an out-degree for each Philosopher. Naturally, the sum of the in and out-degrees must be identical since _what goes around comes around_.
+
+<img src="/assets/img/Directed_phil_dist_dir.png" alt="Degree distribution (directed)"/>
 
 As seen, the average in- and out-degree are the same (what goes around must come around). Since we have log-log transformed the x- and y-axis in the plot, it is apparent that the degree distribution is not normally distributed, but instead is very heavy tailed - meaning that we have some very high degree nodes relative to the averages. In layman terms, this simply means that some philosophers have alot of in and out-going links. This is also seen from the medians that lay to the left of the mean. 
 
@@ -114,8 +115,9 @@ But who are the top 10 philosophers in terms of in/out-degree? The table below s
 As seen, almost all of the Philosophers seen in the table are well-known seminal figures of Philosophy. To remind to the reader, remember that in-degree reveals how many links from other Philosophers point to the Philosopher in question and out-degree reveals how many philosophers the philosopher in question points towards (on Wikipedia). It is thus unsuprising that we see the top 10 philosophers above since they seminal figures of Philosophy, and we would expect them to be either linked to in many other Philosopher Wikipedia pages, or link to other Philosophers Wikipedia pages. 
 
 #### Scatterplot (in out correlation)
-Continuing on the last point made above, we now investigate if there a correlation between the in- and out-degree for philosophers. 
-<img src="/assets/img/Scatter_dir_degree.png" alt="Scatterplot for in-out" style="height: 100px; width:100px;"/>
+Continuing on the last point made above, we now investigate if there a correlation between the in- and out-degree for philosophers.
+
+<img src="/assets/img/Scatter_dir_degree.png" alt="Scatterplot for in-out"/>
 
 The above plot shows the respective in- and out-degrees for each Philosopher. As seen, there is a general positive correlation between the degrees, meaning that we expect (on average) a Philosophers in-degree to reveal something about the appertaining out-degree - namely that Philosophers with high in-degree also have high out-degree, and low in-degree Philosophers have low out-degree. 
 #### Whats next?
@@ -206,7 +208,7 @@ In Philosophy, there are many subareas of interest, and often Philosophers will 
 
 It would be nice if these sets were already disjoint – meaning that a philosopher could only be in one of the branch lists. However, in accordance with the points made before, many of the philosophers appear in multiple branches, and only a select few can be directly assigned a core area based on the provided branch lists. We provide the non-technical reader with the following Venn-diagram to understand the dilemma (using Jeremy Bentham as an example): 
 
-<img src="/assets/img/Venn.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
+<img src="/assets/img/Venn.png" alt="Degree distribution (directed)"/>
 
 As seen, Jeremy Bentham is a member of three philosophical branches according to Wikipedia, and given the ambiguity how should do we choose which branch is his main core area in a meaningful way? Furthermore, some philosophers do not appear in any of the branch lists, and how do we appropriately determine their philosophical core area? Unfortunately, there is no perfect way of doing this, but one way is to utilize the network structure to create meaningful classifications of philosophical core areas for those philosophers who do not appear in any branch list, and for those that appear in many and are therefore ambiguous to classify. The process is as follows: 
 -	Start by assigning unambiguous philosophers (those who only appear in only one branch of philosophy) their core area. 
@@ -229,7 +231,7 @@ INDSÆT GRAFTER FOR LOUVAIN OG VORES PARTITION.
 
 As seen, the modularity for the Louvain partition is much higher than the partition we found using our methods. On a brighter note, our partition does seem to have some modularity as some node colors appear to be clustered together in the graph. It can however be a quite unfair evaluation to compare partitions against the Louvain partition as it becomes increasingly difficult to keep a high modularity as the number of edges and links grow. Therefore, using an algorithm that creates suitable random versions of a given partition, we statistically evaluate how likely our computed modularity is under the assumption that it was created randomly.  
 
-<img src="/assets/img/Modularity.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
+<img src="/assets/img/Modularity.png" alt="Degree distribution (directed)"/>
 
 To help the reader understand what has been done, we have created a distribution of modularity scores of random networks based on the philosophy network using the core-area partition. The black line indicates the modularity score of the core-area partition. Had the black line laid within the bell-shaped curve, we would not consider the partition to be much different from any random partition of the network using the same branches of philosophy. However, because the black line lays far from the bellshaped part of the distribution, and has a much higher value, we consider the modularity of the core area split very significant – meaning that it is highly unlikely that it happened randomly. Consequently, even though the modularity score of the core-area partition is much lower than the optimal modularity found using the Louvain algorithm, it is still a very good partition of the philosophy network.  
 
@@ -238,8 +240,8 @@ Another interesting network measurement is assortativity. In short, assortativit
 
 For the degree of nodes we get a assortativity score of ???, while we get a slightly higher assortativity based on the core-areas of ???. This simply means that philosphers in the network are more likely to be linked to other philosophers with the same core-area, than they are to be linked to other philosophers of the same degrees. The scores are closer to 0 than to 1, and therefore we would say that we see a _slight_ assortativity for both degree and core-area. However, as with the modularity scores, we can investigate if the measures assortativity scores area significant or not. 
 
-<img src="/assets/img/degree_assortivity.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
-<img src="/assets/img/attribute_assortivity.png" alt="Degree distribution (directed)" style="height: 50px; width:50px;"/>
+<img src="/assets/img/degree_assortivity.png" alt="Degree distribution (directed)"/>
+<img src="/assets/img/attribute_assortivity.png" alt="Degree distribution (directed)"/>
 
 As seen by the distributions above, in both cases, the measure assortativity is significantly different from what we would expect to measure had the philosophy network been randomly linked based on the core-area partitioning. This means that even though the assortativity is low, it is non-neglitable. Therefore we can conclude two things, namely than (1) in both cases the assortativity is significatn, and (2) philosophers tend to link to other philosophers of the same core-area much more than they tend to link to other philosophers with the same degree. 
 
