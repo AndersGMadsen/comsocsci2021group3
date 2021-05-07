@@ -139,7 +139,7 @@ $$
 \operatorname{idf}(t, D)=\log \frac{N}{|\{d \in D: t \in d\}|}
 $$
 where $N=|D|$ i.e. the number of documents in the corpus, and $|\{d \in D: t \in d\}|$ is the number of documents in the corpus in which _t_ appears. To get a full overview of the most frequent terms or highest TF-IDF score for each philosopher and core-area, we refer to the notebook. Based on the TF and TF-IDF measures, we have constructed several WordCloud's which for now will be our center of attention. 
-<img style="width: 70%;" src="assets/img/kirkegaard_together.png" alt="Kirkegaard_wordclouds"/>
+<img style="width: 100%;" src="assets/img/kirkegaard_together.png" alt="Kirkegaard_wordclouds"/>
 
 
 LOREM IPSUM
