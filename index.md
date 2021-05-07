@@ -4,7 +4,26 @@
 <iframe align=middle id="serviceFrameSend" width="100%" height="800" frameborder="0" src="network/complete/index.html"></iframe>
 
 # Test
-<button onclick="location.href = 'www.yoursite.com';" class="button"><span>Test </span></button>
+<div style="display: table-row">
+        <button onclick="location.href = 'network/sociopoliticals/index.html';" class="button" style="min-width: 250px; height: 250px; background-color: #F6D04D">
+        	<span>Sociopoliticals</span>
+        </button>
+        <button onclick="location.href = 'network/metaphysicians/index.html';" class="button" style="min-width: 230px; height: 230px; background-color: #1FD082">
+        	<span>Metaphysicians</span>
+        </button>
+        <button onclick="location.href = 'network/logicians/index.html';" class="button" style="min-width: 180px; height: 180px; background-color: #030F4F">
+        	<span>Logicians</span>
+        </button>
+        <button onclick="location.href = 'network/epistemologists/index.html';" class="button" style="min-width: 210px; height: 210px; background-color: #FC7634">
+        	<span>Epistemologists</span>
+        </button>
+        <button onclick="location.href = 'network/aestheticians/index.html';" class="button" style="min-width: 180px; height: 180px; background-color: #E83F48">
+        	<span>Aestheticians</span>
+        </button>
+        <button onclick="location.href = 'network/ethicists/index.html';" class="button" style="min-width: 210px; height: 210px; background-color: #2F3EEA">
+        	<span>Ethicists</span>
+        </button>
+    </div>
 
 ### Why Philosophy?
 The following will be a deep dive into the realm of Philosophy. The curious adolescent minds of students are often intrigued by the endless void that is philosophy. From the abstract (but logical) language games of Wittgenstein to the rigorous logic and wittiness of his mentor Bertrand Russell. From the ambitious ethical duties of Immanuel Kant to the computational proxies of Jeremy Bentham and John Stuart Mill (and perhaps beyond good and evil with Friedrich Nietzsche). Perhaps one is going through an existential crisis and seek refuge in the works of Albert Camus or Sartre. Perhaps one turns to the stoics for inspirational quotes to scribble on the wall of one’s start-up garage-office while micro-dosing LSD, honing the art of Brazilian Jiu Jitsu and filming a-day-in-the-life-of-an-entrepreneur for one’s YouTube channel. Whatever the reason may be, one thing remains a challenge for one’s philosophical endeavors: time – hence why philosophy is a void. The endless hours needed to get a decent overview of all of philosophy exceeds one human life, perhaps even hundreds (maybe thousands). Consequently, with the help of Wikipedia, some network theory, and some computational semantics we strive to create just that. The project revolves around creating a network of Philosophy using data from Wikipedia. The project also strives to be accessible to non-scientific readers. 
