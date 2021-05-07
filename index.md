@@ -136,11 +136,11 @@ Note that further into the text analysis, we stem every token using the `Snowbal
 #### TF-IDF
 The aim of the Term frequency - Inverse document frequency metric is to reflect the importance of a term in the document, wighting it according to the whole corpus that the document is a part of. Essentially, a high frequency of the term will give it a higher value, while the IDF will reduce it's value relative to how often appears in the rest of the corpus. Therefore, the formular is as simple as:
 
-$\operatorname{idf}(t,d,D) = \operatorname{tf}(t,d) \cdot \operatorname{idf}(t,D)$
+\[\operatorname{idf}(t,d,D) = \operatorname{tf}(t,d) \cdot \operatorname{idf}(t,D)\]
 
 While there are many ways to calculate the TF, we have chosen to simply use the raw count of the particular word - the number of time it appears in the document. The reasoning for this is simply that it will work well mathematically when we want to weight words in the WordClouds later. The math behind the IDF is only a bit more complicated as it has the following formular:
 
-$\operatorname{idf}(t, D)=\log \frac{N}{&#124\{d \in D: t \in d\}&#124}$
+\[operatorname{idf}(t, D)=\log \frac{N}{&#124\{d \in D: t \in d\}&#124}\]
 
 where $N=|D|$ i.e. the number of documents in the corpus, and $|\{d \in D: t \in d\}|$ is the number of documents in the corpus in which _t_ appears. To get a full overview of the most frequent terms or highest TF-IDF score for each philosopher and core-area, we refer to the notebook. Based on the TF and TF-IDF measures, we have constructed several WordCloud's which for now will be our center of attention. 
 
