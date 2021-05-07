@@ -4,7 +4,7 @@
 <!--<iframe align=middle id="serviceFrameSend" width="100%" height="800" frameborder="0" src="network/complete/index.html"></iframe>-->
 
 # Test
-<div style="display: table-row">
+<div style="display: table-row; margin: 0 auto;">
         <button onclick="location.href = 'network/sociopoliticals/index.html';" class="button" style="min-width: 210px; height: 210px; background-color: #F6D04D">
         	<span>Sociopoliticals</span>
         </button>
