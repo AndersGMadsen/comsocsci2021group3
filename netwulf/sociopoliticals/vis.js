@@ -50,7 +50,7 @@ function vis(new_controls) {
 
 
 
-  window.controls = {"zoom": 0.8,
+  window.controls = {"zoom": 0.9,
         "node_charge": -80,
         "node_gravity": 0.1,
         "link_distance": 0.1,
