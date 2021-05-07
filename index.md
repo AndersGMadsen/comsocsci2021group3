@@ -1,7 +1,7 @@
 # comsocsci2021group3
 
 # Easy 12!
-<iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="test/index.html"></iframe>
+<iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="netwulf/network1/index.html"></iframe>
 
 
 ### Why Philosophy?
