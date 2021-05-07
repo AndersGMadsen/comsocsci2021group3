@@ -150,12 +150,16 @@ Above you find two WordClouds of a great danish philospher, Søren Kierkegaard. 
 
 **The six core-are WordClouds using TF-IDF**
 <img style="width: 100%;" src="assets/img/WordCloud_tfidf.png" alt="TF-IDF"/>
-Looking at the top TF-IDF WordClouds for the six core-areas, we find that they are very hard to understand, as some of them aren't even in english, and that they are quite special in the sense that they are very unknown to the authors of this website. The reasons why this is, could be that the corpus' are so large and has so much in common that many of the words easily overlaps. We hoped that this could have been avoided as there are no overlap of philosophers between the documents. Another reason could be that we downweight words which occurs in more than one document too much, and therefore only see quite rare words. To avoid this, we tried experimenting with the weighting of the words in the TF-IDF calculations, however without getting any significant better results. Unfortunately, it seems like we are better off looking at the most frequent words, although those WordClouds are quite similar.![image](https://user-images.githubusercontent.com/57094931/117505741-d6d8ac00-af84-11eb-9052-ca993dd67250.png)
+Looking at the top TF-IDF WordClouds for the six core-areas, we find that they are very hard to understand, as some of them aren't even in english, and that they are quite special in the sense that they are very unknown to the authors of this website. The reasons why this is, could be that the corpus' are so large and has so much in common that many of the words easily overlaps. We hoped that this could have been avoided as there are no overlap of philosophers between the documents. Another reason could be that we downweight words which occurs in more than one document too much, and therefore only see quite rare words. To avoid this, we tried experimenting with the weighting of the words in the TF-IDF calculations, however without getting any significant better results. Unfortunately, it seems like we are better off looking at the most frequent words, although those WordClouds are quite similar.
 
+#### Sentiment Analysis
+As we are working with text which aims to inform the reader in an objective way, we don't expect any a sentiment analysis of our corpus to be particularly interesting. However, we will in the following use sentimental values used for the Hedonometer (downloaded from here https://hedonometer.org/words/labMT-en-v2/) for making a short sentiment analysis. 
 
-LOREM IPSUM
-#### Sentiment Analisys
-LOREM IPSUM
+First and foremost we plot the density of the average happiness score for each philoshopher page.
+[SENTIMENT ANALYSE PLOT]
+
+Comparing the density plot above with the Hedonometer (which describes the happiness scores of twitter from 2009-present, https://hedonometer.org/timeseries/en_all/?from=2008-09-09&to=2021-05-06) we eyeball that the mean average happiness score of the philosophers' Wikipedia page (approx. 5.52) is generally lower that the average happiness score on Twitter (approx. 6). This makes sense since Wikipedia is an online encyclopedia, which uses a more objective (and thus neutral) language. Twitter on the other hand, is a hub for subjectivity and social out
+
 #### Lexical Diversity
 LOREM IPSUM 
 
