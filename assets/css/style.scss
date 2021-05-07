@@ -1,68 +1,39 @@
 ---
 ---
 
+@import "{{ site.theme }}";
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+body {
+  font-family: "Computer Modern", sans-serif;
+}
+
+
 /*.page-header {
   color: #000000;
   background-image: url("logo.gif");
   background-size: 100% 100%;
 }*/
-
-img {
-  width: 95%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tg {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin:0px auto;
-  text-align: center;
-}
-
-.tg td {
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  overflow: hidden;
-  padding: 10px 5px;
-  word-break:normal;
-}
-.tg th{
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  font-weight: normal;
-  overflow: hidden;
-  padding: 10px 5px;
-  word-break: normal;
-}
-
-.tg .tg-rz17{
-  color:#606C71;
-  font-weight:bold;
-  text-align:center;
-  vertical-align:middle
-}
-
-.tg .tg-nnys{
-  color:#606C71;
-  text-align:center;
-  vertical-align:middle
-}
-.main-content {
-  max-width: 80rem;
-}
-
-iframe {
-  margin: 0 auto;
-  display: block;
-  border-style: none;
-  width: 100%;
-}
-
-@import "{{ site.theme }}";
 
 .tg {
   border-collapse: collapse;
@@ -124,7 +95,7 @@ img {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-family: "Helvetica";
+  font-family: "Computer Modern", sans-serif;;
   font-size: 20px;
   transition: all 0.5s;
   cursor: pointer;
