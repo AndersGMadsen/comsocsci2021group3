@@ -41,7 +41,7 @@ As seen, the average in- and out-degree are the same (what goes around must come
 
 #### Top 5 in/out degree
 But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
-<table class="center">
+<table class="table">
 <thead>
   <tr>
     <th colspan="2">Top 10 philosophers (in-degree)</th>
@@ -144,7 +144,7 @@ Another interesting investigation in the philosophy network is to compute the be
 An intuitive way of thinking about betweenness centrality score is to consider the consumer airline network, specifically flight logistics. Imagine you live in Denmark and you are trying to book a flight from Copenhagen to a tiny island off the coast of Africa. How would your flight route look? You probably would not fly directly to the island since such a route (path) does not exist. On the other hand, your itinerary would probably not involve having you fly to Russia or the USA for a layover either. The most efficient route (i.e., the shortest path) would probably include a layover in a popular airport in Europe, like Amsterdam, and/or a layover in an airport closer to your destination, like Dubai. Big airports enable many possible flight routes, i.e., the shortest paths, and are very central to the aerospace network and thus have high betweenness centrality.
 For our philosopher network, the centrality betweenness becomes slightly more abstract, as links are now not flight routes but rather hyperlinks between Wikipedia pages. It does however still indicate the most central philosophers in the graph. The table below shows the most central philosophers in the directed philosophy network.
 
-<table>
+<table class="table">
 <thead>
   <tr>
     <th colspan="2">Top 10 philosophers (betweenness centrality</th>
