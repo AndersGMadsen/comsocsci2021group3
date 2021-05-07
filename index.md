@@ -322,7 +322,9 @@ We will provide some brief statistics for the reader to consider while exploring
   </tr>
 </tbody>
 </table>
+
 The following will not be much more than a picture book for the curious reader to explore. As the reader will notice, some core philosophers will change based on the subgraph examined, and some philosophers will appear in many graphs. We encourage the reader to spend some time exploring on their own. 
+
 ##### Sociopoliticals
 
 <div style='display:inline-block;'>
