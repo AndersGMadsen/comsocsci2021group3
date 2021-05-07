@@ -44,67 +44,67 @@ As seen, the average in- and out-degree are the same (what goes around must come
 But who are the top 10 philosophers in terms of in/out-degree? The table below shows exactly that.
 <table class="tg">
 <thead class="tg">
-  <tr>
+  <tr class="tg">
     <th class="tg-rz17" colspan="2"><span style="font-weight:bold">Top 10 philosophers (in-degree)</span></th>
     <th class="tg-rz17" colspan="2"><span style="font-weight:bold">Top 10 philosophers (out-degree)</span></th>
   </tr>
 </thead>
 <tbody class="tg">
-  <tr>
+  <tr class="tg">
     <td class="tg-nnys">Aristotle</td>
     <td class="tg-nnys">535</td>
     <td class="tg-nnys">Plato</td>
     <td class="tg-nnys">379</td>
   </tr>
-  <tr>
+  <tr class="tg">
     <td class="tg-nnys">Immanuel Kant</td>
     <td class="tg-nnys">530</td>
     <td class="tg-nnys">Immanuel Kant</td>
     <td class="tg-nnys">370</td>
   </tr>
-  <tr>
+  <tr class="tg">
     <td class="tg-nnys">Plato</td>
     <td class="tg-nnys">438</td>
     <td class="tg-nnys">Baruch Spinoza</td>
     <td class="tg-nnys">348</td>
   </tr>
-  <tr>
+  <tr class="tg">
     <td class="tg-nnys">Georg Wilhelm Friedrich Hegel</td>
     <td class="tg-nnys">422</td>
     <td class="tg-nnys">Georg Wilhelm Friedrich Hegel</td>
     <td class="tg-nnys">346</td>
   </tr>
-  <tr>
+  <tr class="tg">
     <td class="tg-nnys">Thomas Aquinas</td>
     <td class="tg-nnys">397</td>
     <td class="tg-nnys">Augustine of Hippo</td>
     <td class="tg-nnys">338</td>
   </tr>
-  <tr>
+  <tr class="tg">
     <td class="tg-nnys">David Hume</td>
     <td class="tg-nnys">390</td>
     <td class="tg-nnys">Friedrich Nietzsche</td>
     <td class="tg-nnys">331</td>
   </tr>
-  <tr>
+  <tr class="tg">
     <td class="tg-nnys">Augustine of Hippo</td>
     <td class="tg-nnys">384</td>
     <td class="tg-nnys">David Hume</td>
     <td class="tg-nnys">329</td>
   </tr>
-  <tr>
+  <tr class="tg">
     <td class="tg-nnys">Friedrich Nietzsche</td>
     <td class="tg-nnys">366</td>
     <td class="tg-nnys">Bertrand Russell</td>
     <td class="tg-nnys">314</td>
   </tr>
-  <tr>
+  <tr class="tg">
     <td class="tg-nnys">Karl Marx</td>
     <td class="tg-nnys">362</td>
     <td class="tg-nnys">Aristotle</td>
     <td class="tg-nnys">309</td>
   </tr>
-  <tr>
+  <tr class="tg">
     <td class="tg-nnys">Bertrand Russell</td>
     <td class="tg-nnys">358</td>
     <td class="tg-nnys">Gottfried Leibniz</td>
