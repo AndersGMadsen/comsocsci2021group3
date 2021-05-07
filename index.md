@@ -15,9 +15,6 @@ As other hyperlinks that those associated with philosophers was gathered, furthe
 _"The Oxford Companion to Philosophy", "Timaeus of Locri Glossary of philosophy"_ and _"The Cambridge Dictionary of Philosophy"_ was removed. After this cleaning process, we end up having 1726 observations.
 
 As the project developed, more attributes were gathered as they could provide useful information for the analysis. Using another Wikipedia API, _wptools_, all the _infoboxes_, which is provided often on a Wikipedia page, were collected as they contain fundamental facts about the philosopher. Following the guidelines for infoboxes, _birth_dates_ where extracted using simple string processing. Having around 60% of the philosophers _birth_dates_ in place, further data about this was added using a list of birth years provided by Sune Lehmann [https://raw.githubusercontent.com/suneman/socialgraphs2017/master/files/philosopher_birth_year.json], making the completeness of this attribute close to perfect. The rest was filled in manually by looking the philosopher up on the Internet (mostly Wikipedia).
- 
-[Something about pageview]![image]
-
 
 ### Initial Graph
 #### To be or not to be.. directed or undirected
@@ -27,9 +24,9 @@ More precisely, a directed link between a philosopher (A) and a philosopher (B) 
 
 
 #### Nodes, links and density
-Following the above algorithm for links, the Philosophy Network has a total of ??? nodes and ??? links. As seen, we have less nodes than observations because some Philosophers do not point towards others and are not pointed towards. For any graph we can describe appertaining density as the number of actual links over the number possible links. For a directed graph we have the following equation:
+Following the above algorithm for links, the Philosophy Network has a total of 1645 nodes and 69109 links. As seen, we have less nodes than observations because some Philosophers do not point towards others and are not pointed towards. For any graph we can describe appertaining density as the number of actual links over the number possible links. For a directed graph we have the following equation:
 
-\\[Density = \frac{|E|}{|E|(|E|-1)} = ??? \\]
+\\[density = \frac{|E|}{|E|(|E|-1)} = 0.026 \\]
 
 where |E| denotes the number of links. As seen, the network is very sparse (since the density is closer to 0 than 1) and this is what we expect from real world networks. 
 #### Degree (plots log-trans: mean median min max)
@@ -163,16 +160,7 @@ First and foremost we plot the density of the average happiness score for each p
 
 Comparing the density plot above with the Hedonometer (which describes the happiness scores of twitter from 2009-present, https://hedonometer.org/timeseries/en_all/?from=2008-09-09&to=2021-05-06) we eyeball that the mean average happiness score of the philosophers' Wikipedia page (approx. 5.52) is generally lower that the average happiness score on Twitter (approx. 6). This makes sense since Wikipedia is an online encyclopedia, which uses a more objective (and thus neutral) language. Twitter on the other hand, is a hub for subjectivity and social out
 
-#### Lexical Diversity
-LOREM IPSUM 
-
-
-#### WikiPedia page count
-LOREM IPSUM 
-#### Content
-LOREM IPSUM
-
-### Deeper Analisys (not sure yet)
+### Deeper Analisys
 #### Betweenness centrality 
 Another interesting investigation in the philosophy network is to compute the betweenness centrality of nodes. In this definition of centrality (and there are many definitions!) nodes that occur in many shortest paths are considered central in the graph and thus have high centrality scores.
 
