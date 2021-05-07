@@ -6,11 +6,6 @@
 # Easy 12!
 <iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="test/index.html"></iframe>
 
-
-# Test
-<iframe align=middle id="serviceFrameSend" width="100%" height="684" frameborder="0" src="test.html"></iframe>
-
-
 ### Why Philosophy?
 The following will be a deep dive into the realm of Philosophy. The curious adolescent minds of students are often intrigued by the endless void that is philosophy. From the abstract (but logical) language games of Wittgenstein to the rigorous logic and wittiness of his mentor Bertrand Russell. From the ambitious ethical duties of Immanuel Kant to the computational proxies of Jeremy Bentham and John Stuart Mill (and perhaps beyond good and evil with Friedrich Nietzsche). Perhaps one is going through an existential crisis and seek refuge in the works of Albert Camus or Sartre. Perhaps one turns to the stoics for inspirational quotes to scribble on the wall of one’s start-up garage-office while micro-dosing LSD, honing the art of Brazilian Jiu Jitsu and filming a-day-in-the-life-of-an-entrepreneur for one’s YouTube channel. Whatever the reason may be, one thing remains a challenge for one’s philosophical endeavors: time – hence why philosophy is a void. The endless hours needed to get a decent overview of all of philosophy exceeds one human life, perhaps even hundreds (maybe thousands). Consequently, with the help of Wikipedia, some network theory, and some computational semantics we strive to create just that. The project revolves around creating a network of Philosophy using data from Wikipedia. The project also strives to be accessible to non-scientific readers. 
 
@@ -351,7 +346,96 @@ For each branch of philosophy, we create a subgraph by utilizing both the core a
 </tbody>
 </table> <img style="width: 60%;" src="assets/img/sociopoliticals.png" alt="Degree distribution (directed)"/>
 
-
+##### Metaphysicians
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Top 10 Metaphysicians (betweenness centrality)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Immanuel Kant</td>
+    <td>0.053</td>
+  </tr>
+  <tr>
+    <td>Plato</td>
+    <td>0.042</td>
+  </tr>
+  <tr>
+    <td>Aristotle</td>
+    <td>0.039</td>
+  </tr>
+  <tr>
+    <td>David Hume</td>
+    <td>0.03</td>
+  </tr>
+  <tr>
+    <td>René Descartes</td>
+    <td>0.027</td>
+  </tr>
+  <tr>
+    <td>Bertrand Russell</td>
+    <td>0.026</td>
+  </tr>
+  <tr>
+    <td>Georg Wilhelm Friedrich Hegel</td>
+    <td>0.023</td>
+  </tr>
+  <tr>
+    <td>Augustine of Hippo</td>
+    <td>0.022</td>
+  </tr>
+  <tr>
+    <td>John Stuart Mill</td>
+    <td>0.02</td>
+  </tr>
+  <tr>
+    <td>Friedrich Nietzsche</td>
+    <td>0.019</td>
+  </tr>
+  <tr>
+    <td>Thomas Aquinas</td>
+    <td>0.018</td>
+  </tr>
+  <tr>
+    <td>Edward N. Zalta</td>
+    <td>0.018</td>
+  </tr>
+  <tr>
+    <td>Averroes</td>
+    <td>0.018</td>
+  </tr>
+  <tr>
+    <td>Arthur Schopenhauer</td>
+    <td>0.017</td>
+  </tr>
+  <tr>
+    <td>Karl Popper</td>
+    <td>0.017</td>
+  </tr>
+  <tr>
+    <td>John Locke</td>
+    <td>0.015</td>
+  </tr>
+  <tr>
+    <td>Baruch Spinoza</td>
+    <td>0.015</td>
+  </tr>
+  <tr>
+    <td>Edmund Husserl</td>
+    <td>0.014</td>
+  </tr>
+  <tr>
+    <td>Maimonides</td>
+    <td>0.013</td>
+  </tr>
+  <tr>
+    <td>Henri Bergson</td>
+    <td>0.012</td>
+  </tr>
+</tbody>
+</table>
 
 #### Some advanced investigations and discussions
 Small world property, Clustering, Betweenness, Assortiveness etc.
